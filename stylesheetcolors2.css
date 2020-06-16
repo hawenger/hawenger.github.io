@@ -14,8 +14,10 @@ padding-top: 20px;
 
 .left {
 left: 0;
-background-image: ;
+background-image: url("../hawenger.github.io/standingwoman.jpeg");
 background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 background-color: #373838; 
 }
 
