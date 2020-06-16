@@ -12,19 +12,23 @@ overflow-y: hidden;
 padding-top: 20px;
 }
 
-.left {
+.lbox {
 left: 0;
-background-image: url("../hawenger.github.io/standingwoman.jpeg") alt="Standing woman in jeans with long hair and purse facing away from camera against empty yellow background";
+background-image: url("../hawenger.github.io/standingwoman.jpeg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-background-color: #373838; 
+background-color: rgb(255, 219, 0); 
 }
 
-.right {
+#left {
+    padding: 69% 43% 5% 5%;;    
+}
+
+.rbox {
 right: 0;
 background-image: URL("IMG_0046-02.jpg");
-background-color: #0F4C81;
+background-color: rgb(243, 117, 82);
 }
 
 .centered {
@@ -32,10 +36,11 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
 text-align: center;
 }
 
-.centered img {
+img {
     width: 150px;
     border-radius: 50%
 }

@@ -1,20 +1,27 @@
 h1 {
-    text-align: center;
+    text-align: left;
     color: #F26B5B;
     font-family: 'Montserrat', sans-serif;
     font-size: 100px;
+    text-shadow: 8px -1px 4px rgb(154, 21, 48)
 }
 
 h2 {
     text-align: center;
-    color: #7FC844;
+    color: rgb(255, 223, 0);
     font-family: 'Montserrat', sans-serif;
     font-size: 100px;
+    text-shadow: 10px -6px 3px #f14935;
 }
 
+#left p {
+    color:#f1eee6cc;
+    height: 8em;
+    line-height: 1.5;
+    text-align: left;
+    text-shadow: 3px -1px 5px rgb(176, 154, 0);
+}
 p {
-    text-align: center;
-    color: #F1EEE6;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 40px;    
