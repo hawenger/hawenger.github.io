@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    color: #F26B5B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+}
+
+h2 {
+    text-align: center;
+    color: #7FC844;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+}
+
+p {
+    text-align: center;
+    color: #F1EEE6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 40px;    
+}
