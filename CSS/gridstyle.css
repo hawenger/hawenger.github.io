@@ -1,0 +1,3014 @@
+* {
+    list-style: none;
+    text-size-adjust: auto;
+}
+
+body {
+
+    background-color: white;
+    margin: 0 auto;
+
+}
+
+.fixed-nav-bar {
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 4em;
+    background-color: black;
+}
+
+#check {
+
+    display: none;
+}
+
+.fa {
+
+    margin-top: .6em;
+}
+
+a {
+
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #e82506;
+    bottom: 3em;
+    left: -200%;
+    text-align: center;
+    transition: all .6s;
+    
+}
+
+nav ul li {
+
+    display: block;
+    margin: 1em 1.5em;
+    line-height: 1.5;
+    text-align: right;
+    position: relative;
+    top: 9em;
+
+
+}
+
+nav ul li a {
+
+    font-size: 1.25em;
+
+}
+
+a:hover,a.active {
+
+    background: none;
+    color: white;
+}
+
+.largenav {
+
+display:none;
+}
+
+.smallnav {
+
+    display: inline-block;
+    line-height: 1.5;
+    margin: 0 .3em;
+    text-decoration: none;
+    color: #c53a4d;
+    font-size: 1em;
+    padding: 1.2em .81em;
+    left: 0;
+    text-align: center;
+    
+
+}
+.normnav {
+
+    display: inline-block;
+    line-height: 1.5;
+    margin: 0 .3em;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6em;
+    padding: .43em .81em;
+    left: 0;
+    text-align: center;
+
+}
+
+#check:checked ~ ul {
+
+    left: 0;
+
+}
+
+.checkbtn {
+
+    font-size: 1.8em;
+    color: #ffffff;
+    float: right;
+    line-height: 1.5;
+    margin-right: 1em;
+    cursor: pointer;
+    display: block;
+}
+
+
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(10em, auto);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    justify-content: center; 
+    align-content: stretch;
+    height: 125vw;
+    margin-bottom: 0;
+    margin-top: 0;
+                         
+}
+
+
+.grid-item-1 { /* black */
+
+        background-color: #000000;
+        grid-column: span 12;
+        grid-row: span 1;
+
+    
+    }
+
+    .grid-item-2 { /*black*/
+    
+        background-color: #000000;
+        grid-column: span 2;
+        grid-row: span 6;
+    
+    }
+
+    .grid-item-3 { /* BALLOON GIRL top*/
+    
+        background-color: #000000;
+        grid-column: span 8;
+        grid-row: span 2;
+        background-image: url("../images/balloon.jpg");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 6em;
+    }
+
+    .grid-item-4 { /* black */
+    
+        background-color: #000000;
+        grid-column: span 2;
+        grid-row: span 6;
+        color: transparent;
+    }
+    
+    .grid-item-5 { /* BALLOON GIRL mid*/
+        background-color: #000000;
+        grid-column: span 8;
+        grid-row: span 2;
+        background-image: url("../images/balloon.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 15em;
+        color: transparent;
+        text-align: center;
+    }
+
+    .grid-item-5:hover {
+
+        background-image: none;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        transition: 0.6s;
+        cursor: pointer;
+    }
+    .grid-item-6 { /* BALLOON GIRL bottom*/
+
+        background-color: #000000;
+        grid-column: span 8;
+        grid-row: span 2;
+        background-image: url("../images/balloon.jpg");
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 3em;
+    
+    }
+
+    .grid-item-7 { /* black */
+
+        background-color: #000000;
+        grid-column: span 12;
+        grid-row: span 2;
+        height: 2em;
+
+    
+    }
+
+
+    .grid-item-8 { /* hello */
+    
+    background-color:black;
+    grid-column: span 4;
+    grid-row: span 1;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: justify;
+    padding: 1em;
+    
+    }
+
+    .grid-item-a { /*black*/
+    
+    grid-column: span 8;
+    grid-row: span 1;
+
+    }
+
+    .grid-item-b { /*black*/
+    
+        grid-column: span 4;
+        grid-row: span 2;
+    
+        }
+
+    #hannah {
+
+        font-size: 2em;
+        color: #ee3e74;
+    }
+
+    .grid-item-k {
+
+    grid-column: span 12;
+    grid-row: span 2;
+
+    }
+
+    .grid-item-9 { /* black */
+
+        background-color: #000000;
+        grid-column: span 8;
+        grid-row: span 2;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        overflow-wrap: normal;
+        padding: .5em;
+        line-height: 1.5;
+
+    
+    }
+
+    .grid-item-10 { /* P1 */
+
+        background-color: #c53a4d;
+        grid-column: span 12;
+        grid-row: span 2;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-wrap: normal;
+        text-align: center;
+        line-height: 1.5;
+        padding: 3em;
+    
+
+    
+    }
+
+    .grid-item-c { /* black */
+    
+        grid-column: span 12;
+        grid-row: span 2;
+    
+        }
+
+    .grid-item-d { /*black*/
+    
+        grid-column: span 12;
+        grid-row: span 2;
+        background: #e82506;
+        
+        }
+
+    .punctuation {
+
+        color: #c53a4d;
+    } 
+
+    .grid-item-11 { /* balloon:idea*/
+
+        background-color: white;
+        grid-column: span 12;
+        grid-row: span 2;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+        font-weight: 600;
+    
+    }
+
+    
+    .grid-item-e { /*black*/
+    
+        grid-column: span 12;
+        grid-row: span 2;
+        
+        }
+
+    .grid-item-12 { /* let go of string */
+
+        background-color: #ffffff;
+        grid-column: span 8;
+        grid-row: span 2;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+
+    
+    }
+
+    .grid-item-13 { /* black*/
+
+        background-color: #000000;
+        grid-column: span 4;
+        grid-row: span 2;
+
+    
+    }
+
+    .grid-item-14 { /* black */
+
+        background-color: #000000;
+        grid-column: span 4;
+        grid-row: span 2;
+
+    
+    }
+
+    .grid-item-15 { /* no matter landing*/
+
+        background-color: #ffffff;
+        grid-column: span 6;
+        grid-row: span 2;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+
+    
+    }
+
+    .grid-item-16 { /* black */
+
+        background-color: #000000;
+        grid-column: span 4;
+        grid-row: span 2;
+
+    
+    }
+
+    .grid-item-17 { /* ability to inspire */
+
+        background-color: #ffffff;
+        grid-column: span 8;
+        grid-row: span 2;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+        padding-left: 2em;
+
+    
+    }
+
+    .grid-item-f { /*black*/
+    
+        grid-column: span 12;
+        grid-row: span 2;
+        
+        }
+
+    .grid-item-18 { /* approach*/
+
+        background-color: #e82506;
+        grid-column: span 12;
+        grid-row: span 2;
+        color: #ffffff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+        padding: 1.5em;
+
+    
+    }
+
+    .grid-item-19 { /* black */
+
+
+        background-color: #ffffff;
+        grid-column: span 12;
+        grid-row: span 2;
+        border-left: .3em solid #e82506;
+
+    
+    }
+    .grid-item-20 { /* black */
+
+
+        background-color: #ffffff;
+        grid-column: span 12;
+        grid-row: span 2;
+        border-left: .3em solid #e82506;
+
+    
+    }
+
+    .grid-item-21 { /* listen */
+
+        background-color: #ffffff;
+        grid-column: span 12;
+        grid-row: span 2;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        overflow-wrap: normal;
+        text-align: justify;
+        padding-left: 4em;
+
+
+    
+    }
+    .grid-item-22 { /* black */
+
+        background-color: #ffffff;
+        grid-column: span 12;
+        grid-row: span 2;
+        border-right: .3em solid #e82506;
+
+    
+    }
+
+    .grid-item-23 { /* black */
+
+        background-color: #ffffff;
+        grid-column: span 12;
+        grid-row: span 2;
+        border-right: .3em solid #e82506;
+       
+    
+    }
+
+    .grid-item-24 { /* learn */
+
+    background-color: #e82506;
+    grid-column: span 12;
+    grid-row: span 2;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: justify;
+    padding: .5em;
+    font-weight: 600;
+
+    }
+
+    .grid-item-25 { /* */
+
+        background-color: #ffffff;
+        grid-column: span 12;
+        grid-row: span 2;
+        border-left: .3em solid #e82506;
+      
+
+
+    
+    }
+
+    .grid-item-26 { /* black */
+
+        background-color: #ffffff;
+        grid-column: span 12;
+        grid-row: span 2;
+        border-left: .3em solid #e82506;
+
+    
+    }
+    .grid-item-27 { /* adapt */
+
+        background-color: #ffffff;
+        grid-column: span 12;
+        grid-row: span 2;
+        color: #e82506;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        overflow-wrap: normal;
+        text-align: center;
+        padding-left: 4em;
+        font-weight: 600;
+        
+
+    
+    }
+
+    .grid-item-g { /*black*/
+    
+        grid-column: span 12;
+        grid-row: span 2;
+        border-right: .3em solid #e82506;
+        
+    }
+
+    .grid-item-h { /*black*/
+    
+        grid-column: span 12;
+        grid-row: span 2;
+        border-right: .3em solid #e82506;
+            
+    }
+    
+    .grid-item-28 { /* yes and */
+
+        background-color: #e82506;
+        grid-column: span 12;
+        grid-row: span 2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+        padding: 3em;
+
+
+    
+    }
+
+    .grid-item-28 a {
+
+        color: white;
+        font-weight: 600;
+
+    }
+
+    .grid-item-28a:hover {
+
+        color: black;
+        cursor: pointer;
+    }
+
+    .grid-item-i { /*black*/
+    
+        grid-column: span 12;
+        grid-row: span 2;
+        
+    }
+
+    .grid-item-j { /*black*/
+    
+    grid-column: span 12;
+    grid-row: span 2;
+            
+    }
+    
+
+.grid-item-29 { /* IF YOU */
+    
+    background-color: #c53a4d;
+    grid-column: span 12;
+    grid-row: span 2;
+    color: #ffffff;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: center;
+    padding: 1em;
+}
+
+.grid-item-30 { /* know more about why */
+    
+    background-color: black;
+    grid-column: span 6;
+    grid-row: span 2;
+    color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: center;
+    padding: 2em;
+}
+
+.grid-item-31 { /* about me*/
+    background-color: white;
+    grid-column: span 6;
+    grid-row: span 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: center;
+    border: .1em;
+    border-style: solid none solid solid;
+    border-color: black;
+}
+
+
+.grid-item-32 { /* are looking to hire */
+    
+    background-color: #ffffff;
+    grid-column: span 12;
+    grid-row: span 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: center;
+    padding: 3em;
+}
+
+.grid-item-33 { /* Collaborate and connect*/
+    
+    background-color: #ffbc00;
+    grid-column: span 8;
+    grid-row: span 2;
+    color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: center;
+    padding: 3em;
+}
+
+.grid-item-34 { /*portfolio and contact*/
+    
+    background-color: white;
+    grid-column: span 4;
+    grid-row: span 2;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: center;
+    border: .1em;
+    border-style: solid none solid solid;
+    border-color: #e82506;
+}
+
+.grid-item-35 { /* empty*/
+    
+
+    background-color: #c53a4d;
+    grid-column: span 12;
+    grid-row: span 2;
+    font-size: 1em;
+    height: 10em;
+}
+
+@media (min-width: 43em){
+
+    .fixed-nav-bar {
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 4em;
+        background-color: black;
+    }
+    
+    #check {
+    
+        display: none;
+    }
+    
+    .fa {
+    
+        margin-top: .6em;
+    }
+    
+    a {
+    
+        font-family: 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    ul {
+    
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #e82506;
+        bottom: 3em;
+        left: -200%;
+        text-align: center;
+        transition: all .6s;
+        
+    }
+    
+    nav ul li {
+    
+        display: block;
+        margin: 1em 1.5em;
+        line-height: 1.5;
+        text-align: right;
+        position: relative;
+        top: 9em;
+    
+    
+    }
+    
+    nav ul li a {
+    
+        font-size: 1.25em;
+    
+    }
+    
+    a:hover,a.active {
+    
+        background: none;
+        color: white;
+    }
+    
+    .largenav {
+    
+    display:none;
+    }
+    
+    .smallnav {
+    
+        display: inline-block;
+        line-height: 1.5;
+        margin: 0 .3em;
+        text-decoration: none;
+        color: #c53a4d;
+        font-size: 1.5em;
+        padding: .8em 1em;
+        left: 0;
+        text-align: center;
+        
+    
+    }
+    .normnav {
+    
+        display: inline-block;
+        line-height: 1.5;
+        margin: 0 .3em;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.6em;
+        padding: .43em .81em;
+        left: 0;
+        text-align: center;
+    
+    }
+    
+    #check:checked ~ ul {
+    
+        left: 0;
+    
+    }
+    
+    .checkbtn {
+    
+        font-size: 2.2em;
+        color: #ffffff;
+        float: right;
+        line-height: 1.5;
+        margin-right: 1em;
+        cursor: pointer;
+        display: block;
+    }
+    
+
+    .grid-container {
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: minmax(10em, auto);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        justify-content: center; 
+        align-content: stretch;
+        height: 125vw;
+        margin-bottom: 0;
+        margin-top: 0;
+                             
+    }
+    
+    
+    .grid-item-1 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 12;
+            grid-row: span 1;
+    
+        
+        }
+    
+        .grid-item-2 { /*black*/
+        
+            background-color: #000000;
+            grid-column: span 2;
+            grid-row: span 6;
+        
+        }
+    
+        .grid-item-3 { /* BALLOON GIRL top*/
+        
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            background-image: url("../images/balloon.jpg");
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 9em;
+        }
+    
+        .grid-item-4 { /* black */
+        
+            background-color: #000000;
+            grid-column: span 2;
+            grid-row: span 6;
+            color: transparent;
+        }
+        
+        .grid-item-5 { /* BALLOON GIRL mid*/
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            background-image: url("../images/balloon.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 18em;
+            color: transparent;
+            text-align: center;
+        }
+    
+        .grid-item-5:hover {
+    
+            background-image: none;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            transition: 0.6s;
+            cursor: pointer;
+        }
+        .grid-item-6 { /* BALLOON GIRL bottom*/
+    
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            background-image: url("../images/balloon.jpg");
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 6em;
+        
+        }
+    
+        .grid-item-7 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 5em;
+    
+        
+        }
+    
+    
+        .grid-item-8 { /* hello */
+        
+        background-color:black;
+        grid-column: span 4;
+        grid-row: span 1;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+        padding: 3em;
+        
+        }
+    
+        .grid-item-a { /*black*/
+        
+        grid-column: span 8;
+        grid-row: span 1;
+    
+        }
+    
+        .grid-item-b { /*black*/
+        
+            grid-column: span 4;
+            grid-row: span 2;
+        
+            }
+    
+        #hannah {
+    
+            font-size: 2em;
+            color: #ee3e74;
+        }
+    
+        .grid-item-k {
+    
+        grid-column: span 12;
+        grid-row: span 2;
+    
+        }
+    
+        .grid-item-9 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-wrap: wrap;
+            overflow-wrap: normal;
+            padding: 2em;
+            line-height: 1.5;
+    
+        
+        }
+    
+        .grid-item-10 { /* P1 */
+    
+            background-color: #c53a4d;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            overflow-wrap: normal;
+            text-align: center;
+            line-height: 1.5;
+            padding: 5em;
+        
+    
+        
+        }
+    
+        .grid-item-c { /* black */
+        
+            grid-column: span 12;
+            grid-row: span 2;
+        
+            }
+    
+        .grid-item-d { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            background: #e82506;
+            height: 3em;
+            
+            }
+    
+        .punctuation {
+    
+            color: #c53a4d;
+        } 
+    
+        .grid-item-11 { /* balloon:idea*/
+    
+            background-color: white;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            font-weight: 600;
+            padding: 3em;
+        
+        }
+    
+        
+        .grid-item-e { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 2em;
+            
+            }
+    
+        .grid-item-12 { /* let go of string */
+    
+            background-color: #ffffff;
+            grid-column: span 8;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 2em;
+    
+        
+        }
+    
+        .grid-item-13 { /* black*/
+    
+            background-color: #000000;
+            grid-column: span 4;
+            grid-row: span 2;
+    
+        
+        }
+    
+        .grid-item-14 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 4;
+            grid-row: span 2;
+    
+        
+        }
+    
+        .grid-item-15 { /* no matter landing*/
+    
+            background-color: #ffffff;
+            grid-column: span 6;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 2em;
+    
+        
+        }
+    
+        .grid-item-16 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 4;
+            grid-row: span 2;
+            padding: 2em;
+    
+        
+        }
+    
+        .grid-item-17 { /* ability to inspire */
+    
+            background-color: #ffffff;
+            grid-column: span 8;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding-left: 2em;
+    
+        
+        }
+    
+        .grid-item-f { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 3em;
+            
+            }
+    
+        .grid-item-18 { /* approach*/
+    
+            background-color: #e82506;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: #ffffff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 4em;
+    
+        
+        }
+    
+        .grid-item-19 { /* black */
+    
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+    
+        
+        }
+        .grid-item-20 { /* black */
+    
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+    
+        
+        }
+    
+        .grid-item-21 { /* listen */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding-left: 4em;
+            padding-top: 1em;
+    
+    
+        
+        }
+        .grid-item-22 { /* black */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+    
+        
+        }
+    
+        .grid-item-23 { /* black */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+           
+        
+        }
+    
+        .grid-item-24 { /* learn */
+    
+        background-color: #e82506;
+        grid-column: span 12;
+        grid-row: span 2;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+        padding: 1.5em;
+        font-weight: 600;
+    
+        }
+    
+        .grid-item-25 { /* */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+          
+    
+    
+        
+        }
+    
+        .grid-item-26 { /* black */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+    
+        
+        }
+        .grid-item-27 { /* adapt */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: #e82506;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            overflow-wrap: normal;
+            text-align: center;
+            padding-left: 4em;
+            font-weight: 600;
+            padding-top: 1em;
+            
+    
+        
+        }
+    
+        .grid-item-g { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+            
+        }
+    
+        .grid-item-h { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+                
+        }
+        
+        .grid-item-28 { /* yes and */
+    
+            background-color: #e82506;
+            grid-column: span 12;
+            grid-row: span 2;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 3em;
+    
+    
+        
+        }
+    
+        .grid-item-28 a {
+    
+            color: white;
+            font-weight: 600;
+    
+        }
+    
+        .grid-item-28a:hover {
+    
+            color: black;
+            cursor: pointer;
+        }
+    
+        .grid-item-i { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 5em;
+            
+        }
+    
+        .grid-item-j { /*black*/
+        
+        grid-column: span 12;
+        grid-row: span 2;
+        height: 5em;
+                
+        }
+        
+    
+    .grid-item-29 { /* IF YOU */
+        
+        background-color: #c53a4d;
+        grid-column: span 12;
+        grid-row: span 2;
+        color: #ffffff;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 1em;
+        margin-bottom: .5em;
+    }
+    
+    .grid-item-30 { /* know more about why */
+        
+        background-color: black;
+        grid-column: span 6;
+        grid-row: span 2;
+        color: white;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 2em;
+    }
+    
+    .grid-item-31 { /* about me*/
+        background-color: white;
+        grid-column: span 6;
+        grid-row: span 2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        border: .2em;
+        border-style: solid none solid solid;
+        border-color: black;
+    }
+    
+    
+    .grid-item-32 { /* are looking to hire */
+        
+        background-color: #ffffff;
+        grid-column: span 12;
+        grid-row: span 2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 3em;
+    }
+    
+    .grid-item-33 { /* Collaborate and connect*/
+        
+        background-color: #ffbc00;
+        grid-column: span 8;
+        grid-row: span 2;
+        color: white;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 2em;
+    }
+    
+    .grid-item-34 { /*portfolio and contact*/
+        
+        background-color: white;
+        grid-column: span 4;
+        grid-row: span 2;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        border: .3em;
+        border-style: solid none solid solid;
+        border-color: #e82506;
+    }
+    
+    .grid-item-35 { /* empty*/
+        
+    
+        background-color: #c53a4d;
+        grid-column: span 12;
+        grid-row: span 2;
+        font-size: 1em;
+        height: 10em;
+        margin-top: 2em;
+    }
+
+@media (min-width: 62em) {
+
+    .grid-container {
+
+        margin-top: 8em;
+        margin-bottom: none; 
+    }
+        
+    .checkbtn {
+        
+        display: none;
+    }
+        
+    .fixed-nav-bar {
+        
+        top: 0;
+        height: 5.5em;
+        background-color: #000000;
+    }
+        
+        
+    nav ul li {
+        
+        display: inline-block;
+        margin: 0 .3em; 
+        
+    }
+        
+    nav ul {
+        
+        float: right;
+        margin-right: 1em;
+        position: relative;
+        bottom: 8em;
+        
+    }
+        
+
+        
+    a.active,a:hover {
+        
+        color: #ee3e74;
+        transition: .6s;
+        
+    }
+        
+    ul {
+        
+        float: top;
+        float: right;
+        position: relative;
+        left: 0;
+        height: 0;
+        background: none;
+        text-align: none;
+        }
+        
+    .smallnav {
+        
+        display: none;
+    }
+
+    
+    .fa {
+    
+        margin-top: .6em;
+    }
+    
+    a {
+    
+        font-family: 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .normnav {
+    
+        display: inline-block;
+        line-height: 1.2;
+        margin: 0 .3em;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1em;
+        padding: .43em .81em;
+        left: 0;
+        text-align: center;
+    
+    }
+    
+    
+    .checkbtn {
+    
+       display: none;
+    }
+    
+
+    .grid-container {
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: minmax(10em, auto);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        justify-content: center; 
+        align-content: stretch;
+        height: 125vw;
+        margin-bottom: 0;
+        margin-top: 0;
+                             
+    }
+    
+    
+    .grid-item-1 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 12;
+            grid-row: span 1;
+    
+        
+        }
+    
+        .grid-item-2 { /*black*/
+        
+            background-color: #000000;
+            grid-column: span 2;
+            grid-row: span 6;
+        
+        }
+    
+        .grid-item-3 { /* BALLOON GIRL top*/
+        
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            background-image: url("../images/balloon.jpg");
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 11em;
+        }
+    
+        .grid-item-4 { /* black */
+        
+            background-color: #000000;
+            grid-column: span 2;
+            grid-row: span 6;
+            color: transparent;
+        }
+        
+        .grid-item-5 { /* BALLOON GIRL mid*/
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            background-image: url("../images/balloon.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 20em;
+            color: transparent;
+            text-align: center;
+        }
+    
+        .grid-item-5:hover {
+    
+            background-image: none;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            transition: 0.6s;
+            cursor: pointer;
+        }
+        .grid-item-6 { /* BALLOON GIRL bottom*/
+    
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            background-image: url("../images/balloon.jpg");
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 8em;
+        
+        }
+    
+        .grid-item-7 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 5em;
+    
+        
+        }
+    
+    
+        .grid-item-8 { /* hello */
+        
+        background-color:black;
+        grid-column: span 4;
+        grid-row: span 1;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+        padding: 5em;
+        
+        }
+    
+        .grid-item-a { /*black*/
+        
+        grid-column: span 8;
+        grid-row: span 1;
+    
+        }
+    
+        .grid-item-b { /*black*/
+        
+            grid-column: span 4;
+            grid-row: span 2;
+        
+            }
+    
+        #hannah {
+    
+            font-size: 2em;
+            color: #ee3e74;
+        }
+    
+        .grid-item-k {
+    
+        grid-column: span 12;
+        grid-row: span 2;
+    
+        }
+    
+        .grid-item-9 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-wrap: wrap;
+            overflow-wrap: normal;
+            padding: 5em;
+            line-height: 1.5;
+    
+        
+        }
+    
+        .grid-item-10 { /* P1 */
+    
+            background-color: #c53a4d;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            overflow-wrap: normal;
+            text-align: center;
+            line-height: 1.5;
+            padding: 8em;
+        
+    
+        
+        }
+    
+        .grid-item-c { /* black */
+        
+            grid-column: span 12;
+            grid-row: span 2;
+        
+            }
+    
+        .grid-item-d { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            background: #e82506;
+            height: 3em;
+            
+            }
+    
+        .punctuation {
+    
+            color: #c53a4d;
+        } 
+    
+        .grid-item-11 { /* balloon:idea*/
+    
+            background-color: white;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            font-weight: 600;
+            padding: 3em;
+        
+        }
+    
+        
+        .grid-item-e { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 2em;
+            
+            }
+    
+        .grid-item-12 { /* let go of string */
+    
+            background-color: #ffffff;
+            grid-column: span 8;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 4em;
+    
+        
+        }
+    
+        .grid-item-13 { /* black*/
+    
+            background-color: #000000;
+            grid-column: span 4;
+            grid-row: span 2;
+    
+        
+        }
+    
+        .grid-item-14 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 4;
+            grid-row: span 2;
+    
+        
+        }
+    
+        .grid-item-15 { /* no matter landing*/
+    
+            background-color: #ffffff;
+            grid-column: span 6;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 4em;
+    
+        
+        }
+    
+        .grid-item-16 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 4;
+            grid-row: span 2;
+            padding: 5em;
+    
+        
+        }
+    
+        .grid-item-17 { /* ability to inspire */
+    
+            background-color: #ffffff;
+            grid-column: span 8;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding-left: 2em;
+    
+        
+        }
+    
+        .grid-item-f { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 3em;
+            
+            }
+    
+        .grid-item-18 { /* approach*/
+    
+            background-color: #e82506;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: #ffffff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 3em;
+    
+        
+        }
+    
+        .grid-item-19 { /* black */
+    
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+    
+        
+        }
+        .grid-item-20 { /* black */
+    
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+    
+        
+        }
+    
+        .grid-item-21 { /* listen */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2.5em;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding-left: 4em;
+            padding-top: 1em;
+    
+    
+        
+        }
+        .grid-item-22 { /* black */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+    
+        
+        }
+    
+        .grid-item-23 { /* black */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+           
+        
+        }
+    
+        .grid-item-24 { /* learn */
+    
+        background-color: #e82506;
+        grid-column: span 12;
+        grid-row: span 2;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+        padding: 3em;
+        font-weight: 600;
+    
+        }
+    
+        .grid-item-25 { /* */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+          
+    
+    
+        
+        }
+    
+        .grid-item-26 { /* black */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+    
+        
+        }
+        .grid-item-27 { /* adapt */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: #e82506;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 4em;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            overflow-wrap: normal;
+            text-align: center;
+            padding-left: 4em;
+            font-weight: 600;
+            padding-top: 1em;
+            
+    
+        
+        }
+    
+        .grid-item-g { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+            
+        }
+    
+        .grid-item-h { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+                
+        }
+        
+        .grid-item-28 { /* yes and */
+    
+            background-color: #e82506;
+            grid-column: span 12;
+            grid-row: span 2;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 3em;
+    
+    
+        
+        }
+    
+        .grid-item-28 a {
+    
+            color: white;
+            font-weight: 600;
+    
+        }
+    
+        .grid-item-28a:hover {
+    
+            color: black;
+            cursor: pointer;
+        }
+    
+        .grid-item-i { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 5em;
+            
+        }
+    
+        .grid-item-j { /*black*/
+        
+        grid-column: span 12;
+        grid-row: span 2;
+        height: 5em;
+                
+        }
+        
+    
+    .grid-item-29 { /* IF YOU */
+        
+        background-color: #c53a4d;
+        grid-column: span 12;
+        grid-row: span 2;
+        color: #ffffff;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 2em;
+        margin-bottom: .5em;
+        border-top: 1em solid black;
+    }
+    
+    .grid-item-30 { /* know more about why */
+        
+        background-color: black;
+        grid-column: span 6;
+        grid-row: span 2;
+        color: white;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 2em;
+        height: 8em;
+    }
+    
+    .grid-item-31 { /* about me*/
+        background-color: white;
+        grid-column: span 6;
+        grid-row: span 2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        border: .2em;
+        border-style: solid none solid solid;
+        border-color: black;
+    }
+    
+    
+    .grid-item-32 { /* are looking to hire */
+        
+        background-color: #ffffff;
+        grid-column: span 12;
+        grid-row: span 2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 3em;
+        height: 8em;
+    }
+    
+    .grid-item-33 { /* Collaborate and connect*/
+        
+        background-color: #ffbc00;
+        grid-column: span 8;
+        grid-row: span 2;
+        color: white;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 2em;
+        height: 7em;
+    }
+    
+    .grid-item-34 { /*portfolio and contact*/
+        
+        background-color: white;
+        grid-column: span 4;
+        grid-row: span 2;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        border: .3em;
+        border-style: solid none solid solid;
+        border-color: #e82506;
+    }
+    
+    .grid-item-35 { /* empty*/
+        
+    
+        background-color: #c53a4d;
+        grid-column: span 12;
+        grid-row: span 2;
+        font-size: 1em;
+        height: 10em;
+        margin-top: 2em;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+}
+
+@media (min-width: 82em) {
+
+    .grid-container {
+
+        margin-top: 8em;
+        margin-bottom: none; 
+    }
+        
+    .checkbtn {
+        
+        display: none;
+    }
+        
+    .fixed-nav-bar {
+        
+        top: 0;
+        height: 5.5em;
+        background-color: #000000;
+    }
+        
+        
+    nav ul li {
+        
+        display: inline-block;
+        margin: 0 .3em; 
+        
+    }
+        
+    nav ul {
+        
+        float: right;
+        margin-right: 1em;
+        position: relative;
+        bottom: 8em;
+        
+    }
+        
+
+        
+    a.active,a:hover {
+        
+        color: #ee3e74;
+        transition: .6s;
+        
+    }
+        
+    ul {
+        
+        float: top;
+        float: right;
+        position: relative;
+        left: 0;
+        height: 0;
+        background: none;
+        text-align: none;
+        }
+        
+    .smallnav {
+        
+        display: none;
+    }
+
+    
+    .fa {
+    
+        margin-top: .6em;
+    }
+    
+    a {
+    
+        font-family: 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .normnav {
+    
+        display: inline-block;
+        line-height: 1.2;
+        margin: 0 .3em;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1em;
+        padding: .43em .81em;
+        left: 0;
+        text-align: center;
+    
+    }
+    
+    
+    .checkbtn {
+    
+       display: none;
+    }
+    
+
+    .grid-container {
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: minmax(10em, auto);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        justify-content: center; 
+        align-content: stretch;
+        height: 125vw;
+        margin-bottom: 0;
+        margin-top: 0;
+                             
+    }
+    
+    
+    .grid-item-1 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 12;
+            grid-row: span 1;
+    
+        
+        }
+    
+        .grid-item-2 { /*black*/
+        
+            background-color: #000000;
+            grid-column: span 2;
+            grid-row: span 6;
+        
+        }
+    
+        .grid-item-3 { /* BALLOON GIRL top*/
+        
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            background-image: url("../images/balloon.jpg");
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 13em;
+        }
+    
+        .grid-item-4 { /* black */
+        
+            background-color: #000000;
+            grid-column: span 2;
+            grid-row: span 6;
+            color: transparent;
+        }
+        
+        .grid-item-5 { /* BALLOON GIRL mid*/
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            background-image: url("../images/balloon.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 22em;
+            color: transparent;
+            text-align: center;
+        }
+    
+        .grid-item-5:hover {
+    
+            background-image: none;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            transition: 0.6s;
+            cursor: pointer;
+        }
+        .grid-item-6 { /* BALLOON GIRL bottom*/
+    
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            background-image: url("../images/balloon.jpg");
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 10em;
+        
+        }
+    
+        .grid-item-7 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 7em;
+    
+        
+        }
+    
+    
+        .grid-item-8 { /* hello */
+        
+        background-color:black;
+        grid-column: span 4;
+        grid-row: span 1;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+        padding: 5em;
+        
+        }
+    
+        .grid-item-a { /*black*/
+        
+        grid-column: span 8;
+        grid-row: span 1;
+    
+        }
+    
+        .grid-item-b { /*black*/
+        
+            grid-column: span 4;
+            grid-row: span 2;
+        
+            }
+    
+        #hannah {
+    
+            font-size: 2em;
+            color: #ee3e74;
+        }
+    
+        .grid-item-k {
+    
+        grid-column: span 12;
+        grid-row: span 2;
+    
+        }
+    
+        .grid-item-9 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 8;
+            grid-row: span 2;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-wrap: wrap;
+            overflow-wrap: normal;
+            padding: 8em;
+            line-height: 1.5;
+    
+        
+        }
+    
+        .grid-item-10 { /* P1 */
+    
+            background-color: #c53a4d;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            overflow-wrap: normal;
+            text-align: center;
+            line-height: 1.5;
+            padding: 8em;
+            height: 5em;
+        
+    
+        
+        }
+    
+        .grid-item-c { /* black */
+        
+            grid-column: span 12;
+            grid-row: span 2;
+        
+            }
+    
+        .grid-item-d { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            background: #e82506;
+            height: 1em;
+            
+            }
+    
+        .punctuation {
+    
+            color: #c53a4d;
+        } 
+    
+        .grid-item-11 { /* balloon:idea*/
+    
+            background-color: white;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            font-weight: 600;
+            padding: 5em;
+        
+        }
+    
+        
+        .grid-item-e { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 2em;
+            
+            }
+    
+        .grid-item-12 { /* let go of string */
+    
+            background-color: #ffffff;
+            grid-column: span 8;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 8em;
+    
+        
+        }
+    
+        .grid-item-13 { /* black*/
+    
+            background-color: #000000;
+            grid-column: span 4;
+            grid-row: span 2;
+    
+        
+        }
+    
+        .grid-item-14 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 4;
+            grid-row: span 2;
+    
+        
+        }
+    
+        .grid-item-15 { /* no matter landing*/
+    
+            background-color: #ffffff;
+            grid-column: span 6;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 4em;
+    
+        
+        }
+    
+        .grid-item-16 { /* black */
+    
+            background-color: #000000;
+            grid-column: span 4;
+            grid-row: span 2;
+            padding: 8em;
+    
+        
+        }
+    
+        .grid-item-17 { /* ability to inspire */
+    
+            background-color: #ffffff;
+            grid-column: span 8;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding-left: 2em;
+    
+        
+        }
+    
+        .grid-item-f { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 3em;
+            
+            }
+    
+        .grid-item-18 { /* approach*/
+    
+            background-color: #e82506;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: #ffffff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 5em;
+    
+        
+        }
+    
+        .grid-item-19 { /* black */
+    
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+    
+        
+        }
+        .grid-item-20 { /* black */
+    
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+    
+        
+        }
+    
+        .grid-item-21 { /* listen */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2.5em;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding-left: 4em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+    
+    
+        
+        }
+        .grid-item-22 { /* black */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+    
+        
+        }
+    
+        .grid-item-23 { /* black */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+           
+        
+        }
+    
+        .grid-item-24 { /* learn */
+    
+        background-color: #e82506;
+        grid-column: span 12;
+        grid-row: span 2;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: justify;
+        padding: 3em;
+        font-weight: 600;
+    
+        }
+    
+        .grid-item-25 { /* */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+          
+    
+    
+        
+        }
+    
+        .grid-item-26 { /* black */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            border-left: .3em solid #e82506;
+    
+        
+        }
+        .grid-item-27 { /* adapt */
+    
+            background-color: #ffffff;
+            grid-column: span 12;
+            grid-row: span 2;
+            color: #e82506;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 4em;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            overflow-wrap: normal;
+            text-align: center;
+            padding-left: 4em;
+            font-weight: 600;
+            padding-top: 2em;
+            padding-bottom: 1em;
+            
+    
+        
+        }
+    
+        .grid-item-g { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+            
+        }
+    
+        .grid-item-h { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            border-right: .3em solid #e82506;
+                
+        }
+        
+        .grid-item-28 { /* yes and */
+    
+            background-color: #e82506;
+            grid-column: span 12;
+            grid-row: span 2;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-wrap: normal;
+            text-align: justify;
+            padding: 5em;
+    
+    
+        
+        }
+    
+        .grid-item-28 a {
+    
+            color: white;
+            font-weight: 600;
+    
+        }
+    
+        .grid-item-28a:hover {
+    
+            color: black;
+            cursor: pointer;
+        }
+    
+        .grid-item-i { /*black*/
+        
+            grid-column: span 12;
+            grid-row: span 2;
+            height: 5em;
+            
+        }
+    
+        .grid-item-j { /*black*/
+        
+        grid-column: span 12;
+        grid-row: span 2;
+        height: 5em;
+        border-top: 1em solid #e82506;
+                
+        }
+        
+    
+    .grid-item-29 { /* IF YOU */
+        
+        background-color: #c53a4d;
+        grid-column: span 12;
+        grid-row: span 2;
+        color: #ffffff;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 2em;
+        margin-bottom: .5em;
+        border-top: .5em solid #e82506;
+        height: 3em;
+    }
+    
+    .grid-item-30 { /* know more about why */
+        
+        background-color: black;
+        grid-column: span 6;
+        grid-row: span 2;
+        color: white;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 2em;
+        height: 8em;
+    }
+    
+    .grid-item-31 { /* about me*/
+        background-color: white;
+        grid-column: span 6;
+        grid-row: span 2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        border: .2em;
+        border-style: solid none solid solid;
+        border-color: black;
+    }
+    
+    
+    .grid-item-32 { /* are looking to hire */
+        
+        background-color: #ffffff;
+        grid-column: span 12;
+        grid-row: span 2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 3em;
+        height: 8em;
+    }
+    
+    .grid-item-33 { /* Collaborate and connect*/
+        
+        background-color: #ffbc00;
+        grid-column: span 8;
+        grid-row: span 2;
+        color: white;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        padding: 2em;
+        height: 7em;
+    }
+    
+    .grid-item-34 { /*portfolio and contact*/
+        
+        background-color: white;
+        grid-column: span 4;
+        grid-row: span 2;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        overflow-wrap: normal;
+        text-align: center;
+        border: .3em;
+        border-style: solid none solid solid;
+        border-color: #e82506;
+    }
+    
+    .grid-item-35 { /* empty*/
+        
+    
+        background-color: #c53a4d;
+        grid-column: span 12;
+        grid-row: span 2;
+        font-size: 1em;
+        height: 10em;
+        margin-top: 2em;
+    }
+
+
+
+
+}
+
+
+
