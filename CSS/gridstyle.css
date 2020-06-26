@@ -70,7 +70,7 @@ nav ul li a {
 a:hover,a.active {
 
     background: none;
-    color: white;
+    color: #e82506;
 }
 
 .largenav {
@@ -813,7 +813,7 @@ display:none;
     a:hover,a.active {
     
         background: none;
-        color: white;
+        color: #e82506;
     }
     
     .largenav {
