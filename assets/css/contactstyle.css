@@ -7,8 +7,7 @@
 body {
 
     background-color: white;
-    margin: 0 auto;
-
+    margin: 0em auto;
 }
 
 .fixed-nav-bar {
@@ -126,7 +125,7 @@ a:hover,a.active {
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: minmax(10em, auto);
+    grid-template-rows: minmax(12em, 12em);
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     justify-content: center; 
@@ -140,23 +139,24 @@ a:hover,a.active {
 .grid-item-1 {
 
     grid-column: span 12;
-    grid-row: span 6;
+    grid-row: span 1;
     background-color: black;
+    height: 5em;
+    font-weight: 400;
 
 }
 
 h1 {
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5em;
+    font-family: 'Monoton', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow-wrap: normal;
-    color: white;
-    font-weight: 500;
+    color: black;
     position: relative;
-    top: 3.5em;
+    top: 4.5em;
     text-transform: uppercase;
 
 
@@ -164,28 +164,24 @@ h1 {
 
 .buttonlinked {
 
-    position: relative;
-    top: 31em;
-    width: 80%;
+    width: 10em;
     height: 5em;
-    left: 3.2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: .2em solid black;
+    border: .8em solid white;
+    background-color: black;
+    color: white;
     
 
 }
 
 .buttongithub {
 
-
-    position: relative;
-    top: 18em;
-    width: 80%;
-    left: 3.2em;
+    width: 10em;
     height: 5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: .2em solid black;
-    text-decoration: none;
+    border: .8em solid white;
+    background-color: black;
+    color: white;
 
 }
 
@@ -198,18 +194,10 @@ h1 {
     cursor: pointer;
 }
 
-.email {
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    margin-left: 2em;
-
-}
-
 h2 {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: #e82506;
     font-size: 1em;
 
 }
@@ -217,46 +205,68 @@ h2 {
 .grid-item-2 {
 
     grid-column: span 12;
-    grid-row: span 25;
-    background-image: url("../images/standingwoman.jpeg");
+    grid-row: span 1;
+    height: 30em;
+    background-image: url(../images/standingwoman.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 50%;
 
 }
 
-/*not ready to display footer*/
-footer {
-
-    display: none;
-    height:  1em;
-    background-color: white;
-    font-family: "arial narrow", arial, sans-serif;
-    color: black;
-}
-
-/*
 .grid-item-3 {
+
+    grid-column: span 12;
+    grid-row: span 1;
+    background-color: #ffffff;
 
 
 }
 
 .grid-item-4 {
 
-
+    grid-column: span 12;
+    grid-row: span 1;
+    font-family: "Verdana", SANS-SERIF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2em;
 }
 
 .grid-item-5 {
 
-
+    grid-column: span 6;
+    grid-row: span 1;
+    font-family: "Verdana", SANS-SERIF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
 }
 
 .grid-item-6 {
 
+    grid-column: span 6;
+    grid-row: span 1;
+    font-family: "Verdana", SANS-SERIF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    padding: 4em;
 
 }
 
 .grid-item-7 {
+
+    height: 5em;
 
 
 }
@@ -265,6 +275,18 @@ footer {
 
 
 }
+
+
+/*not ready to display footer*/
+footer {
+    display: none;
+    height:  1em;
+    background-color: white;
+    font-family: "arial narrow", arial, sans-serif;
+    color: black;
+}
+
+/*
 
 .grid-item-9 {
 
@@ -282,7 +304,7 @@ footer {
 
     .grid-item-1 {
 
-        grid-column: span 6;
+        grid-column: span 12;
         grid-row: span 6;
         background-color: black;
     
@@ -404,12 +426,31 @@ footer {
         display: none;
         
     }
+
+   h1 {
+
+    font-size: 5em;
+
+   }
+
+   .grid-item-2 {
+
+    height: 35em;
+
+
+   }
         
     
 }
 
 @media (min-width: 82em) {
+    
+    h1 {
 
+        font-size: 6em;
+
+    }
+    
     .grid-item-1 {
     
         grid-row: span 2;
@@ -418,6 +459,9 @@ footer {
     .grid-item-2 {
     
         grid-row: span 2;
+        height: 45em;
+        
+
     }
 
 
