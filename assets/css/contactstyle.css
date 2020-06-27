@@ -218,7 +218,7 @@ h2 {
 
     grid-column: span 12;
     grid-row: span 25;
-    background-image: url("../assets/standingwoman.jpeg");
+    background-image: url("../images/standingwoman.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
