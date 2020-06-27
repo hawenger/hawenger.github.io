@@ -157,7 +157,7 @@ a:hover,a.active { /*hover over links on nav*/
     background-color: #000000;
     grid-column: span 8;
     grid-row: span 2;
-    background-image: url("../assets/images/balloon.jpg");
+    background-image: url("../images/balloon.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ a:hover,a.active { /*hover over links on nav*/
     background-color: #000000;
     grid-column: span 8;
     grid-row: span 2;
-    background-image: url("../assets/images/balloon.jpg");
+    background-image: url("../images/balloon.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@ a:hover,a.active { /*hover over links on nav*/
     background-color: #000000;
     grid-column: span 8;
     grid-row: span 2;
-    background-image: url("../assets/images/balloon.jpg");
+    background-image: url("../images/balloon.jpg");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
