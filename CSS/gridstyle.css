@@ -71,6 +71,7 @@ a:hover,a.active {
 
     background: none;
     color: #e82506;
+    cursor: pointer;
 }
 
 .smallnav {
