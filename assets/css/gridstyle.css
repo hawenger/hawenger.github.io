@@ -1310,7 +1310,7 @@ footer {
 
     body { /* margin  removed*/
 
-        margin: 0 auto;
+        margin: 0 25em;
 
     }
 
@@ -1378,30 +1378,30 @@ footer {
 
     .grid-item-f {
 
-        height: 15em;
+        height: 10em;
 
     }
 
     .grid-item-21 {
 
-        height: 5em;
+        height: 4em;
     }
 
     .grid-item-24 {
 
-        height: 5em;
+        height: 4em;
 
     }
 
     .grid-item-27 { /* adapt */
     
-        font-size: 4em;
+        font-size: 2em;
                 
     }
 
     .grid-item-28 {
 
-        font-size: 2em;
+        font-size: 1.5em;
 
     }
 }

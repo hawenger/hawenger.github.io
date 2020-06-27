@@ -46,11 +46,11 @@ Format: ![css media queries](url)
 
     >Margins
 
-        I was cautious to adjust elemnts sizing appropriatley as well as margins for each page.  My first consideration was readability, aesthetics being second.  I kept no margins on my smallest mediaqueries and opted into margins on sizes 62-82em.  As for the 82 and up, I took mostly aesthetics into consideration, understanding that larger monitors are used for either work or by people who want to enjoy the aesthetic experience of a large screen.  Those who do work on large screens typically split screen, thus making the typical viewport fall into the 62-82 range anyway.  I opted out of margins for a number of my 82em and larger sizes, instead prioritzing aesthetics over readability, if only slightly, due to this reasoning. I hope to offer the user a pleasing visual experience and plan on desinging my website on this basis in the future.  I think this will be especially beneficial when integrating javascript animations.
+        I was cautious to adjust elements sizing appropriatley as well as margins for each page.  My first consideration was readability, aesthetics being second.  I kept no margins on my smallest mediaqueries and opted into margins on sizes 62-82em.  As for the 82 and up, I took mostly aesthetics into consideration, understanding that larger monitors are used for either work or by people who want to enjoy the aesthetic experience of a large screen.  Those who do work on large screens typically split screen, thus making the typical viewport fall into the 62-82 range anyway.  I opted out of margins for the contact page, 82em and larger sizes, instead prioritzing aesthetics over readability, if only slightly, due to this reasoning. I hope to offer the user a pleasing visual experience and plan on desinging my website on this basis in the future.  I think this will be especially beneficial when integrating javascript animations.
 
     >Text & MISC.
 
-    I used ems instead of px for font and sizing options for better, responsive design as well as percentages when applicaple.  I chose VW units when approprpriate.
+    I used ems instead of px for font and sizing options for better, responsive design as well as percentages when applicaple.  I chose VW units when approprpriate and made sure to have a unversial auto-adjust text sizing function on all pages.
 
 
 ACCESIBILITY
