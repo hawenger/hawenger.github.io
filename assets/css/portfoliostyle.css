@@ -162,7 +162,7 @@ a:hover,a.active {
 
     grid-column: span 12;
     grid-row: span 1;
-    background-image: url("../assets/portfolio1.PNG");
+    background-image: url("../images/portfolio1.PNG");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -257,6 +257,15 @@ a:hover {
     grid-column: span 6;
     grid-row: span 1;
 
+}
+
+footer { /* not ready to display footer */
+
+    display: none;
+    height:  1em;
+    background-color: white;
+    font-family: "arial narrow", arial, sans-serif;
+    color: black;
 }
 
 
