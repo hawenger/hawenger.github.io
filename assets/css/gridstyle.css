@@ -4,14 +4,12 @@
 }
 
 body {
-
     background-color: white;
     margin: 0 auto;
-
 }
 
-.fixed-nav-bar { /*nav bar positon */
-
+.fixed-nav-bar {
+    /*nav bar positon */
     position: fixed;
     bottom: 0;
     left: 0;
@@ -21,23 +19,23 @@ body {
     background-color: black;
 }
 
-#check { /* fa fa bar controlling function */
-
+#check {
+    /* fa fa bar controlling function */
     display: none;
 }
 
-.fa { /*fa fa bar*/
-
+.fa {
+    /*fa fa bar*/
     margin-top: .6em;
 }
 
-a { /*nav list links*/
-
+a {
+    /*nav list links*/
     font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
-ul { /* list block */
-
+ul {
+    /* list block */
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -46,36 +44,33 @@ ul { /* list block */
     left: -200%;
     text-align: center;
     transition: all .6s;
-    
 }
 
-nav ul li { /*nav list style */
-
+nav ul li {
+    /*nav list style */
     display: block;
     margin: 1em 1.5em;
     line-height: 1.5;
     text-align: right;
     position: relative;
     top: 9em;
-
-
 }
 
-nav ul li a { /*nav list*/
-
+nav ul li a {
+    /*nav list*/
     font-size: 1.25em;
-
 }
 
-a:hover,a.active { /*hover over links on nav*/
-
+a:hover,
+a.active {
+    /*hover over links on nav*/
     background: none;
     color: #e82506;
     cursor: pointer;
 }
 
-.smallnav { /*portfolio and contact button on small bottom navigation */
-
+.smallnav {
+    /*portfolio and contact button on small bottom navigation */
     display: inline-block;
     line-height: 1.5;
     margin: 0 .3em;
@@ -85,12 +80,10 @@ a:hover,a.active { /*hover over links on nav*/
     padding: 1.2em .81em;
     left: 0;
     text-align: center;
-    
-
 }
 
-.normnav { /*navigation bar*/
-
+.normnav {
+    /*navigation bar*/
     display: inline-block;
     line-height: 1.5;
     margin: 0 .3em;
@@ -100,17 +93,15 @@ a:hover,a.active { /*hover over links on nav*/
     padding: .43em .81em;
     left: 0;
     text-align: center;
-
 }
 
-#check:checked ~ ul { /* controls fafa bar */
-
+#check:checked~ul {
+    /* controls fafa bar */
     left: 0;
-
 }
 
-.checkbtn { /*controls fafa bar*/
-
+.checkbtn {
+    /*controls fafa bar*/
     font-size: 1.8em;
     color: #ffffff;
     float: right;
@@ -120,40 +111,34 @@ a:hover,a.active { /*hover over links on nav*/
     display: block;
 }
 
-.grid-container {  /*CSS GRID FORMAT */
-
+.grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: minmax(5em, auto);
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-    justify-content: center; 
+    justify-content: center;
     align-content: stretch;
     height: 125vw;
     margin-bottom: 0;
     margin-top: 0;
-                         
 }
 
-.grid-item-1 { /* empty */
-
+.grid-item-1 {
     background-color: #000000;
     grid-column: span 12;
     grid-row: span 1;
-
-    
 }
 
-.grid-item-2 { /*empty*/
-    
+.grid-item-2 {
     background-color: #000000;
     grid-column: span 2;
     grid-row: span 6;
-    
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
-.grid-item-3 { /* BALLOON GIRL top*/
-    
+.grid-item-3 {
     background-color: #000000;
     grid-column: span 8;
     grid-row: span 2;
@@ -162,17 +147,20 @@ a:hover,a.active { /*hover over links on nav*/
     background-size: cover;
     background-repeat: no-repeat;
     height: 5em;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
 }
 
-.grid-item-4 { /* empty */
-    
+.grid-item-4 {
     background-color: #000000;
     grid-column: span 2;
     grid-row: span 6;
     color: transparent;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
 }
-    
-.grid-item-5 { /* BALLOON GIRL mid*/
+
+.grid-item-5 {
     background-color: #000000;
     grid-column: span 8;
     grid-row: span 2;
@@ -183,11 +171,9 @@ a:hover,a.active { /*hover over links on nav*/
     height: 15em;
     color: transparent;
     text-align: center;
-
 }
 
-.grid-item-5:hover { /*Balloon girl hover dropdown to fullstack developer title*/
-
+.grid-item-5:hover {
     background-image: none;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -198,11 +184,9 @@ a:hover,a.active { /*hover over links on nav*/
     overflow-wrap: normal;
     transition: 0.6s;
     cursor: pointer;
-    
 }
-    
-.grid-item-6 { /* BALLOON GIRL bottom*/
 
+.grid-item-6 {
     background-color: #000000;
     grid-column: span 8;
     grid-row: span 2;
@@ -211,27 +195,24 @@ a:hover,a.active { /*hover over links on nav*/
     background-size: cover;
     background-repeat: no-repeat;
     height: 3em;
-    
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
 }
 
-.grid-item-7 { /* empty */
-
+.grid-item-7 {
     background-color: #000000;
     grid-column: span 12;
     grid-row: span 2;
     height: 4em;
     margin-bottom: 2em;
-
-    
 }
 
-
-.grid-item-8 { /* hello */
-    
-    background-color:black;
+.grid-item-8 {
+    /* hello */
+    background-color: white;
     grid-column: span 4;
     grid-row: span 1;
-    color: white;
+    color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2em;
     display: flex;
@@ -239,43 +220,34 @@ a:hover,a.active { /*hover over links on nav*/
     justify-content: center;
     overflow-wrap: normal;
     text-align: justify;
-    padding: 1em;
-    
 }
 
-.grid-item-a { /*empty*/
-    
-grid-column: span 8;
-grid-row: span 1;
-
+.grid-item-a {
+    /*empty */
+    grid-column: span 1;
+    grid-row: span 1;
+    border: 1em solid black;
+    border-radius: 1em;
 }
 
-.grid-item-b { /*empty*/
-    
-    grid-column: span 4;
-    grid-row: span 2;
-    
+.grid-item-b {
+    /*empty */
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: white;
 }
 
-#hannah { /*name in paragraph*/
-
+#hannah {
+    /* name */
     font-size: 2em;
-    color: white;
-    
+    color: black;
 }
 
-.grid-item-k { /*empty*/
-
-    grid-column: span 12;
-    grid-row: span 2;
-
-}
-
-.grid-item-9 { /* empty */
-
-    background-color: #000000;
-    grid-column: span 8;
-    grid-row: span 2;
+.grid-item-9 {
+    /* empty  */
+    background-color: white;
+    grid-column: span 6;
+    grid-row: span 1;
     color: #e82506;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
@@ -284,18 +256,21 @@ grid-row: span 1;
     justify-content: start;
     flex-wrap: wrap;
     overflow-wrap: normal;
-    padding: .5em;
     line-height: 1.5;
-
-    
 }
 
-.grid-item-10 { /* P1 */
-
-    background-color: white;
+.grid-item-k {
+    /* empty */
     grid-column: span 12;
-    grid-row: span 2;
-    color: black;
+    grid-row: span 1;
+}
+
+.grid-item-10 {
+    /* P1 */
+    background-color: black;
+    grid-column: span 12;
+    grid-row: span 1;
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     display: flex;
@@ -305,483 +280,317 @@ grid-row: span 1;
     overflow-wrap: normal;
     text-align: center;
     line-height: 1.5;
-    padding: 3em;
-    
+    padding: 5em;
+    margin-top: 2em;
 }
 
-.grid-item-c { /* empty */
-    
+.grid-item-c {
+    /* empty */
     grid-column: span 12;
-    grid-row: span 2;
-    
+    grid-row: span 1;
 }
 
-.grid-item-d { /*empty*/
-    
+.grid-item-d {
+    /*empty*/
     grid-column: span 12;
-    grid-row: span 2;
+    grid-row: span 1;
     background: white;
-        
+    height: 1em;
 }
 
-.punctuation { /*punctuation in balloon:idea*/
-
+.punctuation {
+    /*punctuation inbetween balloon:idea*/
     color: #e82506;
+}
 
-} 
-
-.grid-item-11 { /* balloon:idea*/
-
+.grid-item-11 {
+    /* balloon:idea*/
     background-color: white;
     grid-column: span 12;
-    grid-row: span 2;
+    grid-row: span 1;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow-wrap: normal;
     text-align: justify;
     font-weight: 600;
-    
-}
-   
-.grid-item-e { /*empty*/
-    
-    grid-column: span 12;
-    grid-row: span 2;
-    height: 2em;
-        
+    padding: 1em;
 }
 
-.grid-item-12 { /* let go of string */
+.grid-item-e {
+    /*empty */
+    grid-column: span 1;
+    grid-row: span 1;
+}
 
+.grid-item-12 {
+    /* let go of string */
     background-color: #ffffff;
-    grid-column: span 8;
-    grid-row: span 2;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-wrap: normal;
-    text-align: justify;
-    height: 2em;
-
-}
-
-.grid-item-13 { /* empty*/
-
-    background-color: #000000;
-    grid-column: span 4;
-    grid-row: span 2;
-    height: 3em;
-
-    
-}
-
-.grid-item-14 { /* empty */
-
-    background-color: #000000;
-    grid-column: span 4;
-    grid-row: span 2;
-    height: 3em;
-
-    
-}
-
-.grid-item-15 { /* no matter landing*/
-
-    background-color: #ffffff;
-    grid-column: span 6;
-    grid-row: span 2;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-wrap: normal;
-    text-align: justify;
-    height: 5em;
-    
-}
-
-.grid-item-16 { /* empty */
-
-    background-color: #000000;
-    grid-column: span 4;
-    grid-row: span 2;
-
-    
-}
-
-.grid-item-17 { /* ability to inspire */
-
-    background-color: #ffffff;
-    grid-column: span 8;
-    grid-row: span 2;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-wrap: normal;
-    text-align: justify;
-    padding-left: 2em;
-
-    
-}
-
-.grid-item-f { /*empty*/
-    
-    grid-column: span 12;
-    grid-row: span 2;
-    height: 5em;
-        
-}
-
-.grid-item-18 { /* approach*/
-
-    background-color: #ffffff;
-    grid-column: span 12;
-    grid-row: span 2;
-    color: #000000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-wrap: normal;
-    text-align: justify;
-    padding: 1.5em;
-
-    
-}
-
-.grid-item-19 { /*empty */
-
-
-    background-color: #ffffff;
-    grid-column: span 12;
-    grid-row: span 2;
-    border-left: .3em solid #e82506;
-
-    
-}
-    
-.grid-item-20 { /* empty */
-
-
-    background-color: #ffffff;
-    grid-column: span 12;
-    grid-row: span 2;
-    border-left: .3em solid #e82506;
-
-    
-}
-
-.grid-item-21 { /* listen */
-
-    background-color: #ffffff;
-    grid-column: span 12;
-    grid-row: span 2;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-wrap: normal;
-
-}
-    
-.grid-item-22 { /* empty */
-
-    background-color: #ffffff;
-    grid-column: span 12;
-    grid-row: span 2;
-    border-right: .3em solid #e82506;
-
-    
-}
-
-.grid-item-23 { /* empty */
-
-    background-color: #ffffff;
-    grid-column: span 12;
-    grid-row: span 2;
-    border-right: .3em solid #e82506;
-       
-    
-}
-
-.grid-item-24 { /* learn */
-
-    background-color: #e82506;
-    grid-column: span 12;
-    grid-row: span 2;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-wrap: normal;
-    text-align: justify;
-    padding: .5em;
-    font-weight: 600;
-
-}
-
-.grid-item-25 { /*empty */
-
-    background-color: #ffffff;
-    grid-column: span 12;
-    grid-row: span 2;
-    border-left: .3em solid #e82506;
-      
-}
-
-.grid-item-26 { /* empty */
-
-    background-color: #ffffff;
-    grid-column: span 12;
-    grid-row: span 2;
-    border-left: .3em solid #e82506;
-
-    
-}
-    
-.grid-item-27 { /* adapt */
-
-
-    background-color: #ffffff;
-    grid-column: span 12;
-    grid-row: span 2;
+    grid-column: span 11;
+    grid-row: span 1;
     color: #e82506;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     overflow-wrap: normal;
-        
+    text-align: justify;
+    padding: 1em;
 }
 
-.grid-item-g { /*empty*/
-    
-    grid-column: span 12;
-    grid-row: span 2;
-    border-right: .3em solid #e82506;
-        
+.grid-item-13 {
+    /* empty */
+    background-color: white;
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
-.grid-item-h { /*empty*/
-    
-    grid-column: span 12;
-    grid-row: span 2;
-    border-right: .3em solid #e82506;
-            
+.grid-item-14 {
+    /* empty  */
+    background-color: #ffffff;
+    grid-column: span 1;
+    grid-row: span 1;
 }
-    
-.grid-item-28 { /* yes and */
 
-    background-color: #e82506;
-    grid-column: span 12;
-    grid-row: span 2;
+.grid-item-15 {
+    /* no matter landing*/
+    background-color: #ffffff;
+    grid-column: span 5;
+    grid-row: span 1;
+    color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow-wrap: normal;
-    padding: 3em;
-    margin-bottom: 8em;
-
+    text-align: justify;
+    padding: 1em;
 }
 
-.grid-item-28 a { /*Yes and link*/
+.grid-item-16 {
+    /* empty  */
+    background-color: #ffffff;
+    grid-column: span 12;
+    grid-row: span 1;
+}
 
+.grid-item-17 {
+    /* ability to inspire */
+    background-color: #ffffff;
+    grid-column: span 12;
+    grid-row: span 1;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow-wrap: normal;
+    padding: 1em;
+}
+
+.grid-item-f {
+    /*empty */
+    grid-column: span 12;
+    grid-row: span 1;
+    height: 2em;
+}
+
+.grid-item-18 {
+    /* approach*/
+    background-color: black;
+    grid-column: span 12;
+    grid-row: span 2;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: justify;
+    margin-top: 0;
+    padding: 1em;
+}
+
+.grid-item-19 {
+    /* empty  */
+    background-color: #ffffff;
+    grid-column: span 1;
+    grid-row: span 2;
+    border-left: .3em solid #e82506;
+}
+
+.grid-item-20 {
+    /* empty  */
+    background-color: #ffffff;
+    grid-column: span 1;
+    grid-row: span 2;
+    border-left: .3em solid #e82506;
+}
+
+.grid-item-21 {
+    /* listen */
+    background-color: #000000;
+    grid-column: span 8;
+    grid-row: span 2;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: center;
+    padding: .5em;
+}
+
+.grid-item-22 {
+    /* empty  */
+    background-color: #ffffff;
+    grid-column: span 1;
+    grid-row: span 2;
+    border-right: .3em solid #e82506;
+}
+
+.grid-item-23 {
+    /* empty  */
+    background-color: #ffffff;
+    grid-column: span 1;
+    grid-row: span 2;
+    border-right: .3em solid #e82506;
+}
+
+.grid-item-24 {
+    /* learn */
+    background-color: #e82506;
+    grid-column: span 4;
+    grid-row: span 2;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.grid-item-25 {
+    /* empty */
+    background-color: #ffffff;
+    grid-column: span 1;
+    grid-row: span 2;
+    border-left: .3em solid #e82506;
+}
+
+.grid-item-26 {
+    /* empty  */
+    background-color: #ffffff;
+    grid-column: span 1;
+    grid-row: span 2;
+    border-left: .3em solid #e82506;
+}
+
+.grid-item-27 {
+    /* adapt */
+    background-color: #ffffff;
+    grid-column: span 4;
+    grid-row: span 2;
+    color: #e82506;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: center;
+    font-weight: 600;
+    padding: 1em;
+}
+
+.grid-item-g {
+    /*empty */
+    grid-column: span 1;
+    grid-row: span 2;
+    border-right: .3em solid #e82506;
+}
+
+.grid-item-h {
+    /*empty */
+    grid-column: span 1;
+    grid-row: span 2;
+    border-right: .3em solid #e82506;
+}
+
+.grid-item-28 {
+    /* yes and */
+    background-color: #e82506;
+    grid-column: span 12;
+    grid-row: span 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    text-align: justify;
+    margin-bottom: 15em;
+    padding: 1em;
+}
+
+.grid-item-28 a {
     color: white;
     font-weight: 600;
-
 }
 
 .grid-item-28a:hover {
-
     color: black;
     cursor: pointer;
 }
 
-/*not ready to display footer*/
-footer {
-
-    display: none;
-    height:  1em;
-    background-color: white;
-    font-family: "arial narrow", arial, sans-serif;
-    color: black;
-}
-
-
-@media (min-width: 43em){
-
-    .grid-item-3 {
-
-        height: 8em;
-
-    }
-    
-    .grid-item-5 {
-
-        height: 18em;
-
-    }
-
-    .grid-item-6 {
-
-        height: 5em;
-    }
-
-    .grid-item-7 {
-
-        height: 6em;
-
-    }
-
-    .grid-item-8 {
-
-        padding: 2em;
-
-    }
-
-    .grid-item-9 {
-
-        padding: 2em;
-
-    }
-
-    .grid-item-10 {
-
-        padding: 4em;
-
-    }
-
-    .grid-item-11 {
-
-        padding: 2em;
-
-    }
-
-    .grid-item-13 {
-
-        height: 5em;
-
-    }
-
-    .grid-item-14 {
-
-        height: 5em;
-
-    }
-
-    .grid-item-16 {
-
-        height: 8em;
-
-    }
-
-    .grid-item-f {
-
-        height: 7em;
-
-    }
-
-    .grid-item-18 {
-
-        padding: 3em;
-
-    }
-
-    .grid-item-21 {
-
-        padding: 2em;
-
-    }
-
-    .grid-item-24 {
-
-        padding: 2em;
-
-    }
-
-    .grid-item-27 {
-
-        padding: 2em;
-
-    }
-
-    .grid-item-28 {
-
-        margin-bottom: 10em;
-
+@media (min-width: 43em) {
+    body {
+        margin: 0 5em;
     }
 }
 
-@media (min-width: 62em) { /* CHANGE TO TOP NAV BAR*/
-
-    body { /*Begin Margin*/
-
+@media (min-width: 62em) {
+    /* CHANGE TO TOP NAV BAR*/
+    body {
+        /*Begin Margin*/
         margin: 0 15em;
-        
     }
-            
     .checkbtn {
-            
         display: none;
-        
     }
-            
     .fixed-nav-bar {
-            
         top: 0;
         height: 5.5em;
         background-color: #000000;
-        
     }
-            
-            
     nav ul li {
-            
         display: inline-block;
-        margin: 0 .3em; 
-            
+        margin: 0 .3em;
     }
-            
     nav ul {
-            
         float: right;
         margin-right: 1em;
         position: relative;
         bottom: 8em;
-            
     }
-            
-    
-            
-    a.active,a:hover {
-            
+    a.active,
+    a:hover {
         color: #e82506;
         transition: .6s;
-            
     }
-            
     ul {
-            
         float: top;
         float: right;
         position: relative;
@@ -789,30 +598,17 @@ footer {
         height: 0;
         background: none;
         text-align: none;
-            
     }
-            
     .smallnav {
-            
         display: none;
-        
     }
-    
-        
     .fa {
-        
         margin-top: .6em;
-        
     }
-        
     a {
-        
         font-family: 'Arial Narrow', Arial, sans-serif;
-        
     }
-        
     .normnav {
-        
         display: inline-block;
         line-height: 1.2;
         margin: 0 .3em;
@@ -822,51 +618,36 @@ footer {
         padding: .43em .81em;
         left: 0;
         text-align: center;
-        
     }
-        
-        
     .checkbtn {
-        
         display: none;
-        
     }
-        
-    
     .grid-container {
-    
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: minmax(10em, auto);
         grid-column-gap: 1em;
         grid-row-gap: 1em;
-        justify-content: center; 
+        justify-content: center;
         align-content: stretch;
         height: 125vw;
         margin-bottom: 0;
         margin-top: 7em;
-                                 
     }
-        
-        
-    .grid-item-1 { /* empty */
-        
+    .grid-item-1 {
+        /* empty */
         background-color: #000000;
         grid-column: span 12;
         grid-row: span 1;
-        
     }
-        
-    .grid-item-2 { /*empty*/
-            
+    .grid-item-2 {
+        /*empty*/
         background-color: #000000;
         grid-column: span 3;
         grid-row: span 6;
-            
     }
-        
-    .grid-item-3 { /* BALLOON GIRL top*/
-            
+    .grid-item-3 {
+        /* BALLOON GIRL top*/
         background-color: #000000;
         grid-column: span 6;
         grid-row: span 2;
@@ -875,19 +656,16 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         height: 6em;
-            
     }
-        
-    .grid-item-4 { /* empty */
-            
+    .grid-item-4 {
+        /* empty */
         background-color: #000000;
         grid-column: span 3;
         grid-row: span 6;
         color: transparent;
-            
     }
-            
-    .grid-item-5 { /* BALLOON GIRL mid*/
+    .grid-item-5 {
+        /* BALLOON GIRL mid*/
         background-color: #000000;
         grid-column: span 6;
         grid-row: span 2;
@@ -898,11 +676,9 @@ footer {
         height: 13em;
         color: transparent;
         text-align: center;
-            
     }
-        
-    .grid-item-5:hover { /*css fullstack development label visible on hover underneath balloon girl img*/
-        
+    .grid-item-5:hover {
+        /*css fullstack development label visible on hover underneath balloon girl img*/
         background-image: none;
         color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -913,11 +689,9 @@ footer {
         overflow-wrap: normal;
         transition: 0.6s;
         cursor: pointer;
-            
     }
-            
-    .grid-item-6 { /* BALLOON GIRL bottom*/
-        
+    .grid-item-6 {
+        /* BALLOON GIRL bottom*/
         background-color: #000000;
         grid-column: span 6;
         grid-row: span 2;
@@ -926,482 +700,72 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         height: 3em;
-            
     }
-        
-    .grid-item-7 { /* empty */
-        
+    .grid-item-7 {
+        /* empty */
         background-color: #000000;
         grid-column: span 12;
         grid-row: span 2;
         height: 7em;
         margin-bottom: 4em;
-        
-    }
-        
-        
-    .grid-item-8 { /* hello */
-            
-        background-color:white;
-        grid-column: span 4;
-        grid-row: span 1;
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow-wrap: normal;
-        text-align: justify;
-    
-    }
-        
-    .grid-item-a { /*empty */
-            
-        grid-column: span 1;
-        grid-row: span 1;
-        border: 1em solid black;
-        
-    }
-        
-    .grid-item-b { /*empty */
-            
-        grid-column: span 1;
-        grid-row: span 1;
-        background-color: white;
-            
-    }
-        
-    #hannah { /* name */
-        
-        font-size: 2em;
-        color: black;
-            
-    }
-        
-    .grid-item-9 { /* empty  */
-        
-        background-color: white;
-        grid-column: span 6;
-        grid-row: span 1;
-        color: #e82506;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        flex-wrap: wrap;
-        overflow-wrap: normal;
-        line-height: 1.5;
-        
-    }
-    
-    .grid-item-k { /* empty */
-        
-        grid-column: span 12;
-        grid-row: span 1;
-        
-    }
-        
-    .grid-item-10 { /* P1 */
-        
-        background-color: black;
-        grid-column: span 12;
-        grid-row: span 1;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        overflow-wrap: normal;
-        text-align: center;
-        line-height: 1.5;
-        padding: 5em;
-        margin-top: 4em;
-            
-    }
-        
-    .grid-item-c { /* empty */
-            
-        grid-column: span 12;
-        grid-row: span 1;
-            
-    }
-        
-    .grid-item-d { /*empty*/
-            
-        grid-column: span 12;
-        grid-row: span 1;
-        background: white;
-        height: 5em;
-                
-    }
-        
-    .punctuation { /*punctuation inbetween balloon:idea*/
-        
-        color: #e82506;
-            
-    } 
-        
-    .grid-item-11 { /* balloon:idea*/
-        
-        background-color: white;
-        grid-column: span 12;
-        grid-row: span 1;
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow-wrap: normal;
-        text-align: justify;
-        font-weight: 600;
-            
-    }
-        
-    .grid-item-e { /*empty */
-            
-        grid-column: span 1;
-        grid-row: span 1;
-                
-    }
-        
-    .grid-item-12 { /* let go of string */
-        
-        background-color: #ffffff;
-        grid-column: span 11;
-        grid-row: span 1;
-        color: #e82506;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        overflow-wrap: normal;
-        text-align: justify;
-        
-    }
-        
-    .grid-item-13 { /* empty */
-        
-        background-color: white;
-        grid-column: span 1;
-        grid-row: span 1;
-        
-    }
-        
-    .grid-item-14 { /* empty  */
-
-        background-color: #ffffff;
-        grid-column: span 1;
-        grid-row: span 1;
-        
-    }
-        
-    .grid-item-15 { /* no matter landing*/
-        
-        background-color: #ffffff;
-        grid-column: span 5;
-        grid-row: span 1;
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow-wrap: normal;
-        text-align: justify;
-        
-    }
-        
-    .grid-item-16 { /* empty  */
-        
-        background-color: #ffffff;
-        grid-column: span 12;
-        grid-row: span 1;
-        
-    }
-        
-    .grid-item-17 { /* ability to inspire */
-        
-        background-color: #ffffff;
-        grid-column: span 12;
-        grid-row: span 1;
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        overflow-wrap: normal;
-        padding-left: 0em;
-        height: 5em;
-        
-    }
-        
-    .grid-item-f { /*empty */
-            
-        grid-column: span 12;
-        grid-row: span 1;
-        height: 5em;
-                
-    }
-        
-    .grid-item-18 { /* approach*/
-        
-        background-color: black;
-        grid-column: span 12;
-        grid-row: span 2;
-        color: #ffffff;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow-wrap: normal;
-        text-align: justify;
-        margin-top: 0;
-        
-    }
-        
-    .grid-item-19 { /* empty  */
-        
-        background-color: #ffffff;
-        grid-column: span 1;
-        grid-row: span 2;
-        border-left: .3em solid #e82506;
-        
-    }
-            
-    .grid-item-20 { /* empty  */
-        
-        background-color: #ffffff;
-        grid-column: span 1;
-        grid-row: span 2;
-        border-left: .3em solid #e82506;
-        
-    }
-        
-    .grid-item-21 { /* listen */
-        
-        background-color: #000000;
-        grid-column: span 8;
-        grid-row: span 2;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow-wrap: normal;
-        text-align: center;
-        padding: initial;
-    
-    }
-            
-    .grid-item-22 { /* empty  */
-        
-        background-color: #ffffff;
-        grid-column: span 1;
-        grid-row: span 2;
-        border-right: .3em solid #e82506;
-        
-    }
-        
-    .grid-item-23 { /* empty  */
-        
-        background-color: #ffffff;
-        grid-column: span 1;
-        grid-row: span 2;
-        border-right: .3em solid #e82506;
-    
-    }
-        
-    .grid-item-24 { /* learn */
-        
-        background-color: #e82506;
-        grid-column: span 4;
-        grid-row: span 2;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow-wrap: normal;
-        text-align: justify;
-        font-weight: 600;
-        
-    }
-        
-    .grid-item-25 { /* empty */
-        
-        background-color: #ffffff;
-        grid-column: span 1;
-        grid-row: span 2;
-        border-left: .3em solid #e82506;
-              
-    }
-        
-    .grid-item-26 { /* empty  */
-        
-        background-color: #ffffff;
-        grid-column: span 1;
-        grid-row: span 2;
-        border-left: .3em solid #e82506;
-        
-    }
-            
-    .grid-item-27 { /* adapt */
-        
-        background-color: #ffffff;
-        grid-column: span 4;
-        grid-row: span 2;
-        color: #e82506;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 3em;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        overflow-wrap: normal;
-        text-align: center;
-        padding-left: 1em;
-        font-weight: 600;
-                
-    }
-        
-    .grid-item-g { /*empty */
-            
-        grid-column: span 1;
-        grid-row: span 2;
-        border-right: .3em solid #e82506;
-                
-    }
-        
-    .grid-item-h { /*empty */
-            
-        grid-column: span 1;
-        grid-row: span 2;
-        border-right: .3em solid #e82506;
-                    
-    }
-            
-    .grid-item-28 { /* yes and */
-        
-        background-color: #e82506;
-        grid-column: span 12;
-        grid-row: span 1;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow-wrap: normal;
-        text-align: justify;
-        margin-bottom: 15em;
-    
     }
 }
 
 @media (min-width: 82em) {
-
-    body { /* margin  removed*/
-
-        margin: 0 25em;
-
+    body {
+        /* margin  removed*/
+        margin: 0 30em;
     }
-
     .grid-item-2 {
-
-        grid-column: span 4;
-
+        grid-column: span 3;
     }
-
-    .grid-item-3 { /* BALLOON GIRL top*/
-            
-        grid-column: span 4;
-            
+    .grid-item-3 {
+        /* BALLOON GIRL top*/
+        grid-column: span 6;
     }
-
     .grid-item-4 {
-
-        grid-column: span 4;
-
+        grid-column: span 3;
     }
-            
-    .grid-item-5 { /* BALLOON GIRL mid*/
-
+    .grid-item-5 {
+        /* BALLOON GIRL mid*/
         height: 18em;
-        grid-column: span 4;
-            
+        grid-column: span 6;
     }
-          
-    .grid-item-6 { /* BALLOON GIRL bottom*/
-        
+    .grid-item-6 {
+        /* BALLOON GIRL bottom*/
         height: 5em;
-        grid-column: span 4;
-            
+        grid-column: span 6;
     }
-
     .grid-item-7 {
-
-        margin-bottom: 10em;
-
+        margin-bottom: 5em;
     }
-
-    .grid-item-a { /*black*/
-            
+    .grid-item-a {
+        /*black*/
         border: 2em solid black;
-        
     }
-
     .grid-item-10 {
-
         margin-top: 5em;
-
     }
-
     .grid-item-17 {
-
         padding-left: 6em;
-    
     }
-
     .grid-item-d {
-
-        height: 15em;
-
+        height: 5em;
     }
-
     .grid-item-f {
-
-        height: 10em;
-
+        height: 4em;
     }
-
     .grid-item-21 {
-
         height: 4em;
     }
-
     .grid-item-24 {
-
         height: 4em;
-
     }
-
-    .grid-item-27 { /* adapt */
-    
+    .grid-item-27 {
+        /* adapt */
         font-size: 2em;
-                
     }
-
     .grid-item-28 {
-
         font-size: 1.5em;
-
     }
 }
