@@ -1,9 +1,7 @@
 :root {
     background-color: rgb(255 255 255);
     line-height: 1.5;
-    font-size: 62.5%;
     background-attachment: fixed;
-    /*Sets default font size to eq. 10px meaning rem like 4.2 = 42 px*/
 }
 
 * {
@@ -33,7 +31,7 @@ body {
 }
 
 .fa {
-    margin-top: .6em;
+    margin-top: 1em;
 }
 
 a {
@@ -109,12 +107,30 @@ a.active {
     display: block;
 }
 
+p {
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+    width: 75%;
+}
+
+a {
+    color: #333;
+    text-align: center;
+}
+
+a:hover {
+    color: #e82506;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: minmax(1em, auto);
+    grid-row-gap: .1em;
     grid-column-gap: 1em;
-    grid-row-gap: 1em;
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
@@ -127,14 +143,14 @@ a.active {
     grid-column: span 12;
     grid-row: span 1;
     background-color: black;
-    height: 8em;
+    height: 5em;
 }
 
 .grid-item-2 {
     font-family: neon-stream, sans-serif;
     grid-column: span 12;
     grid-row: span 2;
-    font-size: 3.5em;
+    font-size: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,24 +177,6 @@ a.active {
     box-shadow: 20px -3px 9px 0px rgb(129 127 178);
     border: 1em solid #000000;
     border-radius: 2%;
-}
-
-p {
-    font-size: 1.5em;
-    color: #333;
-    text-align: center;
-    width: 75%;
-}
-
-a {
-    color: #333;
-    text-align: center;
-}
-
-a:hover {
-    color: #e82506;
-    transition: 0.6s;
-    cursor: pointer;
 }
 
 .grid-item-4 {
@@ -313,6 +311,9 @@ a:hover {
     body {
         margin: 0 5em;
     }
+    p {
+        font-size: 1.2em;
+    }
     .grid-container {
         border-right: 1em solid;
         border-left: 1em solid;
@@ -323,13 +324,13 @@ a:hover {
     }
     .grid-item-2 {
         padding: 1em;
-        font-size: 4em;
+        font-size: 3em;
     }
 }
 
 @media (min-width: 62em) {
     body {
-        margin: 0 18em;
+        margin: 0 10em;
     }
     .checkbtn {
         display: none;
@@ -392,15 +393,13 @@ a:hover {
     }
     .grid-item-2 {
         margin-top: 3em;
-    }
-    p {
-        font-size: 2em;
+        padding: 3em;
     }
 }
 
 @media (min-width: 82em) {
     body {
-        margin: 0 35em;
+        margin: 0 25em;
     }
     .grid-item-2 {
         padding: 3em;
@@ -409,6 +408,6 @@ a:hover {
     .grid-item-6,
     .grid-item-8,
     .grid-item-10 {
-        padding: 5em;
+        padding: 5em 10em;
     }
 }
