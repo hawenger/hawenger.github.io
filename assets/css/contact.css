@@ -4,13 +4,11 @@
 }
 
 body {
-
     background-color: white;
     margin: 0em auto;
 }
 
 .fixed-nav-bar {
-
     position: fixed;
     bottom: 0;
     left: 0;
@@ -21,22 +19,18 @@ body {
 }
 
 #check {
-
     display: none;
 }
 
 .fa {
-
     margin-top: .6em;
 }
 
 a {
-
     font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 ul {
-
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -45,37 +39,29 @@ ul {
     left: -200%;
     text-align: center;
     transition: all .6s;
-    
 }
 
 nav ul li {
-
     display: block;
     margin: 1em 1.5em;
     line-height: 1.5;
     text-align: right;
     position: relative;
     top: 9em;
-
-
 }
 
 nav ul li a {
-
     font-size: 1.25em;
-
 }
 
-a:hover,a.active {
-
+a:hover,
+a.active {
     background: none;
     color: #e82506;
     cursor: pointer;
-
 }
 
 .smallnav {
-
     display: inline-block;
     line-height: 1.5;
     margin: 0 .3em;
@@ -85,12 +71,9 @@ a:hover,a.active {
     padding: 1.2em .81em;
     left: 0;
     text-align: center;
-    
-
 }
 
 .normnav {
-
     display: inline-block;
     line-height: 1.5;
     margin: 0 .3em;
@@ -100,17 +83,13 @@ a:hover,a.active {
     padding: .43em .81em;
     left: 0;
     text-align: center;
-
 }
 
-#check:checked ~ ul {
-
+#check:checked~ul {
     left: 0;
-
 }
 
 .checkbtn {
-
     font-size: 1.8em;
     color: #ffffff;
     float: right;
@@ -121,32 +100,27 @@ a:hover,a.active {
 }
 
 .grid-container {
-
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: minmax(12em, 12em);
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-    justify-content: center; 
+    justify-content: center;
     align-content: stretch;
     height: 125vw;
     margin-bottom: 0;
     margin-top: 0;
-                         
 }
 
 .grid-item-1 {
-
     grid-column: span 12;
     grid-row: span 1;
     background-color: black;
     height: 5em;
     font-weight: 400;
-
 }
 
 h1 {
-
     font-family: 'Monoton', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3em;
     display: flex;
@@ -157,35 +131,29 @@ h1 {
     position: relative;
     top: 4.5em;
     text-transform: uppercase;
-
-
 }
 
 .buttonlinked {
-
     width: 10em;
     height: 5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: .8em solid white;
     background-color: black;
     color: white;
-    
-
 }
 
 .buttongithub {
-
     width: 10em;
     height: 5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: .8em solid white;
     background-color: black;
     color: white;
-
 }
 
-.buttonlinked:hover, .buttongithub:hover { /*hover button functions*/
-
+.buttonlinked:hover,
+.buttongithub:hover {
+    /*hover button functions*/
     background-color: black;
     border-color: white;
     color: white;
@@ -194,37 +162,29 @@ h1 {
 }
 
 h2 {
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #e82506;
     font-size: 1em;
-
 }
 
 .grid-item-2 {
-
     grid-column: span 12;
     grid-row: span 1;
     height: 30em;
-    background-image: url(../images/standingwoman.jpeg);
+    background-image: url(/assets/images/standingwoman.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
-
 }
 
 .grid-item-3 {
-
     grid-column: span 12;
     grid-row: span 1;
     background-color: #ffffff;
-
-
 }
 
 .grid-item-4 {
-
     grid-column: span 12;
     grid-row: span 1;
     font-family: "Verdana", SANS-SERIF;
@@ -238,7 +198,6 @@ h2 {
 }
 
 .grid-item-5 {
-
     grid-column: span 6;
     grid-row: span 1;
     font-family: "Verdana", SANS-SERIF;
@@ -250,7 +209,6 @@ h2 {
 }
 
 .grid-item-6 {
-
     grid-column: span 6;
     grid-row: span 1;
     font-family: "Verdana", SANS-SERIF;
@@ -260,30 +218,25 @@ h2 {
     text-align: center;
     background-color: black;
     padding: 4em;
-
 }
 
 .grid-item-7 {
-
     height: 5em;
-
-
 }
 
-.grid-item-8 {
-
-
-}
+.grid-item-8 {}
 
 
 /*not ready to display footer*/
+
 footer {
     display: none;
-    height:  1em;
+    height: 1em;
     background-color: white;
     font-family: "arial narrow", arial, sans-serif;
     color: black;
 }
+
 
 /*
 
@@ -298,84 +251,50 @@ footer {
 }
 */
 
-
 @media (min-width: 43em) {
-
     .grid-item-1 {
-
         grid-column: span 12;
         grid-row: span 6;
         background-color: black;
-    
     }
-    
     .grid-item-2 {
-    
         grid-column: span 6;
         grid-row: span 6;
-    
-    
     }
-
-    
     .buttongithub {
-
         border-color: #ffd401;
-
     }
-
     .buttonlinked {
-
         border-color: #ffd401;
-
     }
-    
 }
 
-@media (min-width: 62em) { /*Nav moves from bottom of page to top*/
-       
+@media (min-width: 62em) {
+    /*Nav moves from bottom of page to top*/
     .checkbtn {
-            
         display: none;
-        
     }
-            
     .fixed-nav-bar {
-            
         top: 0;
         height: 5.5em;
         background-color: #000000;
-        
     }
-            
-            
     nav ul li {
-            
         display: inline-block;
-        margin: 0 .3em; 
-            
+        margin: 0 .3em;
     }
-            
     nav ul {
-            
         float: right;
         margin-right: 1em;
         position: relative;
         bottom: 8em;
-            
     }
-            
-    
-            
-    a.active,a:hover {
-            
+    a.active,
+    a:hover {
         color: #e82506;
         transition: .6s;
-            
     }
-            
     ul {
-            
         float: top;
         float: right;
         position: relative;
@@ -383,30 +302,17 @@ footer {
         height: 0;
         background: none;
         text-align: none;
-            
     }
-            
     .smallnav {
-            
         display: none;
-        
     }
-    
-        
     .fa {
-        
         margin-top: .6em;
-        
     }
-        
     a {
-        
         font-family: 'Arial Narrow', Arial, sans-serif;
-        
     }
-        
     .normnav {
-        
         display: inline-block;
         line-height: 1.2;
         margin: 0 .3em;
@@ -416,53 +322,27 @@ footer {
         padding: .43em .81em;
         left: 0;
         text-align: center;
-        
     }
-        
-        
     .checkbtn {
-        
         display: none;
-        
     }
-
-   h1 {
-
-    font-size: 5em;
-
-   }
-
-   .grid-item-2 {
-
-    height: 35em;
-
-
-   }
-        
-    
+    h1 {
+        font-size: 5em;
+    }
+    .grid-item-2 {
+        height: 35em;
+    }
 }
 
 @media (min-width: 82em) {
-    
     h1 {
-
         font-size: 6em;
-
     }
-    
     .grid-item-1 {
-    
         grid-row: span 2;
     }
-
     .grid-item-2 {
-    
         grid-row: span 2;
         height: 45em;
-        
-
     }
-
-
-    
 }

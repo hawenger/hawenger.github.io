@@ -167,7 +167,7 @@ a:hover {
     justify-content: center;
     grid-column: span 12;
     grid-row: span 6;
-    background-image: url(../images/turnip1.PNG);
+    background-image: url(/assets/images/turnip1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@ a:hover {
     justify-content: center;
     grid-column: span 12;
     grid-row: span 6;
-    background-image: url(../images/password1.PNG);
+    background-image: url(/assets/images/password1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -237,7 +237,7 @@ a:hover {
     justify-content: center;
     grid-column: span 12;
     grid-row: span 6;
-    background-image: url(../images/quiz1.PNG);
+    background-image: url(/assets/images/quiz1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -272,7 +272,7 @@ a:hover {
     justify-content: center;
     grid-column: span 12;
     grid-row: span 6;
-    background-image: url(../images/4cast1.PNG);
+    background-image: url(/assets/images/4cast1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
