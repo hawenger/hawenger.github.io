@@ -135,10 +135,26 @@ a {
     text-align: center
 }
 
-a:hover {
-    color: #e035ff;
+.link:hover {
+    color: #ff3550;
     transition: 0.6s;
     cursor: pointer;
+    background-color: none;
+    border-color: #01010c;
+}
+
+.link {
+    display: flex;
+    background-color: #01010c;
+    border: .3em solid #05246c;
+    border-radius: .2em;
+    margin: 1em;
+    padding: .8em .8em;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #c5effe;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
