@@ -1,7 +1,6 @@
 :root {
-    background-color: rgb(255 255 255);
+    background-color: #01010c;
     line-height: 1.5;
-    background-attachment: fixed;
 }
 
 * {
@@ -11,10 +10,24 @@
     padding: 0;
 }
 
+main {
+    background-image: url(/assets/images/motherboard2.jfif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+/*NAVIGATION BAR*/
 
 .fixed-nav-bar {
     position: fixed;
@@ -42,7 +55,7 @@ ul {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #e82506;
+    background: #ff3550;
     bottom: 3em;
     left: -200%;
     text-align: center;
@@ -65,7 +78,7 @@ nav ul li a {
 a:hover,
 a.active {
     background: none;
-    color: #e82506;
+    color: #ff3550;
     cursor: pointer;
 }
 
@@ -107,23 +120,29 @@ a.active {
     display: block;
 }
 
+
+/*THE MEAT*/
+
 p {
     font-size: 1em;
-    color: #333;
+    color: #e8fefe;
     text-align: center;
     width: 75%;
 }
 
 a {
-    color: #333;
-    text-align: center;
+    color: #ff3550;
+    text-align: center
 }
 
 a:hover {
-    color: #e82506;
+    color: #e035ff;
     transition: 0.6s;
     cursor: pointer;
 }
+
+
+/*GRID STYLING*/
 
 .grid-container {
     display: grid;
@@ -135,7 +154,6 @@ a:hover {
     align-items: center;
     margin-bottom: 0;
     margin-top: 0;
-    background-color: #e0e0e0;
 }
 
 .grid-item-1 {
@@ -144,56 +162,55 @@ a:hover {
     grid-row: span 1;
     background-color: black;
     height: 5em;
+    display: none;
 }
 
 .grid-item-2 {
-    font-family: neon-stream, sans-serif;
     grid-column: span 12;
     grid-row: span 2;
-    font-size: 2em;
+    font-size: 2.5em;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2em;
-    border: 1em solid black;
-    text-shadow: 4px -4px 9px #222260;
-    box-shadow: inset 11px -8px 20px 0px #222260;
+    padding: 1em 0em;
+    background-color: rgb(0 0 0 / 50%);
+    text-transform: uppercase;
+    color: #edfcfe;
+    border-top: 2em solid #01010c;
+    border-bottom: 2em solid #01010c;
 }
 
 .grid-item-3 {
-    /*Image*/
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column: span 12;
-    grid-row: span 6;
+    grid-row: span 1;
     background-image: url(/assets/images/turnip1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 15%;
+    padding: 3em 1em;
     text-align: center;
-    margin: 5em;
-    box-shadow: 20px -3px 9px 0px rgb(129 127 178);
-    border: 1em solid #000000;
-    border-radius: 2%;
+    margin: 10em 0em 2em 0em;
+    border-top: 1.5em solid #01010c;
+    border-bottom: 2em solid #01010c;
+    background-color: rgb(0 0 0 / 50%);
 }
 
 .grid-item-4 {
-    /*text*/
     grid-column: span 12;
     grid-row: span 6;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow-wrap: normal;
-    padding: 3em;
-    background-color: #bcd1d9;
-    border-top: 1em solid;
-    border-bottom: 1em solid;
-    border-color: #000000;
-    box-shadow: 20px -1px 16px 5px #222260;
+    text-align: center;
+    padding: 2em;
+    border-color: #e8fefe;
+    background-color: rgb(0 0 0 / 50%);
+    border-bottom: 1.5em solid #01010c;
+    border-top: 2em solid #01010c;
 }
 
 .grid-item-5 {
@@ -206,16 +223,15 @@ a:hover {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 15%;
+    padding: 3em 1em;
     text-align: center;
-    margin: 5em;
-    box-shadow: 20px -3px 9px 0px rgb(129 127 178);
-    border: 1em solid #000000;
-    border-radius: 2%;
+    margin: 10em 0em 2em 0em;
+    border-top: 1.5em solid #01010c;
+    border-bottom: 2em solid #01010c;
+    background-color: rgb(0 0 0 / 50%);
 }
 
 .grid-item-6 {
-    /*img*/
     grid-column: span 12;
     grid-row: span 6;
     background-repeat: no-repeat;
@@ -223,12 +239,11 @@ a:hover {
     align-items: center;
     justify-content: center;
     overflow-wrap: normal;
-    padding: 3em;
-    background-color: #bcd1d9;
-    border-top: 1em solid;
-    border-bottom: 1em solid;
-    border-color: #000000;
-    box-shadow: 20px -1px 16px 5px #222260;
+    padding: 2em;
+    border-color: #e8fefe;
+    background-color: rgb(0 0 0 / 50%);
+    border-bottom: 1.5em solid #01010c;
+    border-top: 2em solid #01010c;
 }
 
 .grid-item-7 {
@@ -241,16 +256,15 @@ a:hover {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 15%;
+    padding: 3em 1em;
     text-align: center;
-    margin: 5em;
-    box-shadow: 20px -3px 9px 0px rgb(129 127 178);
-    border: 1em solid #000000;
-    border-radius: 2%;
+    margin: 10em 0em 2em 0em;
+    border-top: 1.5em solid #01010c;
+    border-bottom: 2em solid #01010c;
+    background-color: rgb(0 0 0 / 50%);
 }
 
 .grid-item-8 {
-    /*img*/
     grid-column: span 12;
     grid-row: span 6;
     background-repeat: no-repeat;
@@ -258,12 +272,11 @@ a:hover {
     align-items: center;
     justify-content: center;
     overflow-wrap: normal;
-    padding: 3em;
-    background-color: #bcd1d9;
-    border-top: 1em solid;
-    border-bottom: 1em solid;
-    border-color: #000000;
-    box-shadow: 20px -1px 16px 5px #222260;
+    padding: 2em;
+    border-color: #e8fefe;
+    background-color: rgb(0 0 0 / 50%);
+    border-bottom: 1.5em solid #01010c;
+    border-top: 2em solid #01010c;
 }
 
 .grid-item-9 {
@@ -276,12 +289,12 @@ a:hover {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 15%;
+    padding: 3em 1em;
     text-align: center;
-    margin: 5em;
-    box-shadow: 20px -3px 9px 0px rgb(129 127 178);
-    border: 1em solid #000000;
-    border-radius: 2%;
+    margin: 10em 0em 2em 0em;
+    border-top: 1.5em solid #01010c;
+    border-bottom: 2em solid #01010c;
+    background-color: rgb(0 0 0 / 50%);
 }
 
 .grid-item-10 {
@@ -292,16 +305,14 @@ a:hover {
     align-items: center;
     justify-content: center;
     overflow-wrap: normal;
-    padding: 3em;
-    background-color: #bcd1d9;
-    border-top: 1em solid;
-    border-bottom: 1em solid;
-    border-color: #000000;
-    box-shadow: 20px -1px 16px 5px #222260;
+    padding: 2em;
+    border-color: #e8fefe;
+    background-color: rgb(0 0 0 / 50%);
+    border-bottom: 1.5em solid #01010c;
+    border-top: 2em solid #01010c;
 }
 
 .grid-item-11 {
-    /*text*/
     grid-column: span 12;
     grid-row: span 1;
     margin-bottom: 3em;
@@ -317,14 +328,33 @@ a:hover {
     .grid-container {
         border-right: 1em solid;
         border-left: 1em solid;
-        border-color: rgb(1 1 1 / 90%);
-    }
-    .grid-item-1 {
-        display: none;
+        border-color: rgb(0 0 0 / 50%);
     }
     .grid-item-2 {
         padding: 1em;
         font-size: 3em;
+    }
+    .grid-item-3,
+    .grid-item-4,
+    .grid-item-5,
+    .grid-item-6,
+    .grid-item-7,
+    .grid-item-8,
+    .grid-item-9,
+    .grid-item-10,
+    .grid-item-11 {
+        margin-right: 4em;
+        margin-left: 4em;
+        border-right: 1.5em solid #01010c;
+        border-left: 1.5em solid #01010c;
+    }
+    .grid-item-3,
+    .grid-item-5,
+    .grid-item-7,
+    .grid-item-9,
+    .grid-item-11 {
+        padding: 6em;
+        border: 2em solid rgb(0 0 0 / 5%);
     }
 }
 
@@ -352,7 +382,7 @@ a:hover {
     }
     a.active,
     a:hover {
-        color: #e82506;
+        color: #ff3550;
         transition: .6s;
     }
     ul {
@@ -392,22 +422,56 @@ a:hover {
         grid-row-gap: 1.5em;
     }
     .grid-item-2 {
-        margin-top: 3em;
+        margin-top: 1em;
         padding: 3em;
+        border: none;
+    }
+    .grid-item-3,
+    .grid-item-4,
+    .grid-item-5,
+    .grid-item-6,
+    .grid-item-7,
+    .grid-item-8,
+    .grid-item-9,
+    .grid-item-10,
+    .grid-item-11 {
+        margin-right: 6em;
+        margin-left: 6em;
+        border-right: 1.5em solid #01010c;
+        border-left: 1.5em solid #01010c;
+    }
+    .grid-item-3,
+    .grid-item-5,
+    .grid-item-7,
+    .grid-item-9,
+    .grid-item-11 {
+        padding: 10em;
+        border: 2em solid rgb(0 0 0 / 5%);
     }
 }
 
 @media (min-width: 82em) {
-    body {
-        margin: 0 25em;
+    .grid-container {
+        max-width: 60em;
     }
     .grid-item-2 {
         padding: 3em;
     }
+    .grid-item-3,
     .grid-item-4,
+    .grid-item-5,
     .grid-item-6,
+    .grid-item-7,
     .grid-item-8,
-    .grid-item-10 {
-        padding: 5em 10em;
+    .grid-item-9,
+    .grid-item-10,
+    .grid-item-11 {
+        margin-right: 10em;
+        margin-left: 10em;
+    }
+    .grid-container {
+        border-right: 3em solid;
+        border-left: 3em solid;
+        border-color: rgb(0 0 0 / 50%);
     }
 }
