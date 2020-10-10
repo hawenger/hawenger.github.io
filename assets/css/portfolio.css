@@ -334,6 +334,55 @@ a {
     margin-bottom: 3em;
 }
 
+.grid-item-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 12;
+    grid-row: span 1;
+    background-image: url(/assets/images/se7en.PNG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 3em 1em;
+    text-align: center;
+    margin: 10em 0em 2em 0em;
+    border-top: 1.5em solid #01010c;
+    border-bottom: 2em solid #01010c;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.grid-item-13 {
+    grid-column: span 12;
+    grid-row: span 6;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    padding: 2em;
+    border-color: #e8fefe;
+    background-color: rgb(0 0 0 / 50%);
+    border-bottom: 1.5em solid #01010c;
+    border-top: 2em solid #01010c;
+}
+
+.grid-item-15 {
+    grid-column: span 12;
+    grid-row: span 6;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: normal;
+    padding: 2em;
+    border-color: #e8fefe;
+    background-color: rgb(0 0 0 / 50%);
+    border-bottom: 1.5em solid #01010c;
+    border-top: 2em solid #01010c;
+    margin-top: 10em;
+}
+
 @media (min-width: 43em) {
     body {
         margin: 0 5em;

@@ -328,6 +328,10 @@ h1 {
     text-shadow: -3px -4px 20px #757171;
 }
 
+.hidden {
+    display: none;
+}
+
 
 /*BUTTONS*/
 
