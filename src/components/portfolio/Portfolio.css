@@ -1,0 +1,120 @@
+.scene-container-portfolio {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.tv-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #f0f8ff;
+    box-shadow: 24px 24px 7px #e6eef5, -24px -24px 6px #faffff;
+    border-radius: 2em;
+}
+.tv-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    margin: 2em;
+    height: 15em;
+    width: 15em;
+    color: #333;
+    font-size: 1em;
+    border-radius: 36px;
+    background: #f0f8ff;
+    background-image: url(./static.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 24px 24px 7px #e6eef5, -16px -19px 7px #faffff;
+    transition: linear 0.4s;
+    cursor: pointer;
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+}
+
+.PortfolioLinks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1em;
+    background: rgb(255 251 251 / 82%);
+    width: 100%;
+    height: 100%;
+    border-radius: 36px;
+    font-weight: lighter;
+    border: .1em solid aliceblue;
+}
+
+.link {
+    color: #333;
+    text-decoration-color: yellow;
+    text-shadow: 20px -12px 11px #ffff00;
+    background-color: rgb(255 255 0 / 76%);
+    padding: .1em 3em;
+    border-radius: .1em;
+}
+.link:hover {
+    text-decoration: underline;
+    text-decoration-color:#333;
+}
+
+.visit {
+    background-color: rgb(240 248 255 / 70%);
+    height: 15em;
+    width: 15em;
+    position: absolute;
+}
+
+.visitBtn {
+    padding: 2em 3em;
+    border-radius: 1em;
+    position: relative;
+    top: 5em;
+    background-color: aliceblue;
+    border: solid .2em yellow;
+}
+
+.button-container {
+    display: flex;
+    align-items: flex-start;
+    width: 15em;
+    flex-flow: row;
+}
+@media (min-width: 43em) {
+
+    .tv-screen {
+        height: 25em;
+        width: 25em;
+    }
+    .link {
+        padding: .2em 4em;
+    }
+    .button-container {
+        width: 25em;
+    }
+}
+@media (min-width: 62em) {
+    .tv-screen {
+        height: 30em;
+        width: 30em;
+    }
+    .PortfolioLinks {
+        font-size: 1.5em;
+    }
+    .link {
+        padding: .3em 5em;
+    }
+    .button-container {
+        width: 30em;
+    }
+}
+@media (min-width: 82em) {
+    
+}

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    -webkit-text-size-adjust: auto;
+    -moz-text-size-adjust: auto;
+    -ms-text-size-adjust: auto;
+    text-size-adjust: auto;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #010000;
+  font-family: "Questrial",sans-serif;
+  overflow: overlay;
+}
+
+.Wrapper {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #333;
+  background-color: #f0f8ff;
+  width: 100vw;
+}
+
+.scene-container {
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+
+}
+
+.Buttons {
+  grid-row: span 16;
+  grid-column: span 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #f0f8ff;
+  box-shadow: 24px 24px 7px #e6eef5, -24px -24px 7px #faffff;
+  max-width: 15em;
+  border-radius: 2em;
+}
+
+.navbarbtn {
+  font-weight: 800;
+  text-decoration: none;
+  margin: 1.6em;
+  border: none;
+  background: transparent;
+  transition: linear, .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbarbtn:hover {
+  text-decoration: underline;
+  padding: .1em;
+}
+
+.FullStackTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 6em;
+  overflow-wrap: break-word;
+  font-size: .5em;
+  margin-bottom: 5em;
+  margin-top: 2em;
+}
+/*TEXT*/
+h1 {
+  font-size: 2.5em;
+}
+/*BUTTONS*/
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  margin: 2em;
+  height: 10em;
+  width: 10em;
+  color:#333;
+  font-size: 1em;
+  border-radius: 36px;
+  background: #f0f8ff;
+  box-shadow: 24px 24px 7px #e6eef5, -24px -24px 7px #faffff;
+  transition: linear 0.4s;
+  cursor: pointer;
+  text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+}
+
+.btn:hover {
+  border: none;
+  margin: 2em;
+  height: 10em;
+  width: 10em;
+  border-radius: 100%;
+  text-shadow: none;
+  color: yellow;
+  background: #f0f8ff;
+  box-shadow:  24px 24px 7px #e6eef5, 
+             -24px -24px 7px #faffff;
+  background-repeat: no-repeat;
+}
+
+.AboutButton:hover{
+  background-image: url(./components/home/flowerbrute.jpg);
+  background-position: center;
+}
+.ContactButton:hover{
+  background-image: url(./components/home/flowerbrute.jpg);
+  background-position: right;
+}
+.PortfolioButton:hover{
+  background-image: url(./components/home/flowerbrute.jpg);
+  background-position: center;
+}

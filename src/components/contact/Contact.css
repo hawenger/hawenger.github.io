@@ -1,0 +1,25 @@
+.scene-container-contact {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+}
+
+.nav-bar {
+    flex-direction:column
+}
+
+.button-container-contact {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 62em) {
+    .button-container-contact {
+        flex-flow: row;
+    }
+}
