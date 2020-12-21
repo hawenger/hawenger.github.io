@@ -22,8 +22,17 @@
     background: #f0f8ff;
     box-shadow: 24px 24px 7px #e6eef5, -24px -24px 7px #faffff;
     transition: linear 0.4s;
-    cursor: pointer;
     text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+}
+.RobertLink {
+    color: #010000;
+    font-size: 1.2em;
+    text-decoration-color:#010000
+}
+
+.RobertLink:hover {
+    transition: linear 0.05s;
+    text-decoration-color: yellow;
 }
 
 @media (min-width: 62em) {

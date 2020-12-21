@@ -29,7 +29,7 @@ const About = () => {
                         <p>Unquenchable curiosity and determination mean that I'm <span style={{color:"#010000", fontSize:"1.2em"}}>constantly building</span> personal projects, <span style={{color:"#010000", fontSize:"1.2em"}}>developing skills</span> and researching; <span style={{color:"#010000", fontSize:"1.2em"}}>remaining current</span> within the industry.</p>
                      </div>
                      <div className="about-btn">
-                        <p ><span style={{textDecoration:"underline", textDecorationColor:"yellow", textDecorationThickness:".5em"}}><span style={{fontSize:"1.1em", fontWeight:"500"}}>M</span>y most recent project</span>, <a href="https://vast-depths-13570.herokuapp.com/" style={{color:"#010000", fontSize:"1.2em", textDecorationColor:"#010000"}}>"Robert"</a>, is an experiment in virtual reality, speech synthesis and web-audio.</p>
+                        <p ><span style={{textDecoration:"underline", textDecorationColor:"yellow", textDecorationThickness:".5em"}}><span style={{fontSize:"1.1em", fontWeight:"500"}}>M</span>y most recent project</span>, <a className="RobertLink" href="https://vast-depths-13570.herokuapp.com/">"Robert"</a>, is an experiment in virtual reality, speech synthesis and web-audio.</p>
                         <p>I believe it showcases my ability to not only learn and implement new technologies but also represents the guiding principal in my work and life,</p>
                         </div>
                      <div className="about-btn">
