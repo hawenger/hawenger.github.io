@@ -12,7 +12,8 @@ const Navigation = (props) => {
           <NavLink to="/" className="navLink">Home</NavLink>
           <NavLink to="/about" className="navLink">About</NavLink>
           <NavLink to="/contact" className="navLink">Contact</NavLink>
-          <NavLink to="/portfolio" className="navLink">Portfolio</NavLink>
+          <NavLink to="/portfolio" className="navLink">Web Portfolio</NavLink>
+          <NavLink to="/gallery" className="navLink">Print &amp; Photos</NavLink>
        </div>
     )
     return (

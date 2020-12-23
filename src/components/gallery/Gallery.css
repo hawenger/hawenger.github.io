@@ -1,0 +1,321 @@
+.button-container-photosandprint {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.photo-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    margin: 2em;
+    flex-flow: column;
+    color: #333;
+    padding: 2em;
+    font-size: 1em;
+    border-radius: 36px;
+    background: #f0f8ff;
+    box-shadow: 24px 24px 7px #e6eef5, -24px -24px 7px #faffff;
+    transition: linear 0.4s;
+    text-shadow: 0 0 1px #e6eef5, 2px 1px 0px #f0f8ff, 0 0 1px #f0f8ff, 0 0 1px #faffff;
+
+}
+.a {
+    background-image: url(./a.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 25em;
+    width: 34.5em;
+}
+.b {
+    background-image: url(./b.PNG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 25em;
+}
+.c {
+    background-image: url(./c.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 34.5em;
+}
+.d {
+    background-image: url(./d.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 18em;
+}
+.e {
+    background-image: url(./e.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 14em;
+    width: 20em;
+}
+
+.f {
+    background-image: url(./f.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 18em;
+}
+.g {
+    background-image: url(./g.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 19em;
+}
+.h {
+    background-image: url(./h.JPG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15em;
+    width: 15em;
+}
+.i{
+    background-image: url(./i.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 34em;
+}
+.j {
+    background-image: url(./j.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 32.5em;
+}
+.k {
+    background-image: url(./k.JPG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15em;
+    width: 15em;
+}
+.l {
+    background-image: url(./l.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 18em;
+}
+.m{
+    background-image: url(./m.HEIC);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 23em;
+    width: 50em;
+}
+.n {
+    background-image: url(./n.JPG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15em;
+    width: 15em;
+}
+.o {
+    background-image: url(./o.PNG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 18em;
+}
+.p {
+    background-image: url(./p.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 19em;
+}
+.q{
+    background-image: url(./q.PNG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 14em;
+    width: 20em;
+}
+.r {
+    background-image: url(./r.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 19em;
+    width: 18em;
+}
+.s {
+    background-image: url(./s.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 34.5em;
+}
+.t {
+    background-image: url(./t.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 18em;
+}
+.u {
+    background-image: url(./u.JPG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 25em;
+}
+.v {
+    background-image: url(./v.JPG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 25em;
+}
+.w {
+    background-image: url(./w.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 34.5em;
+}
+.x {
+    background-image: url(./x.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 34.5em;
+}
+.y {
+    background-image: url(./y.JPG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 17.8em;
+}
+.z {
+    background-image: url(./z.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 20em;
+}
+.aa {
+    background-image: url(./aa.PNG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15em;
+    width: 15em;
+}
+.bb {
+    background-image: url(./bb.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 23em;
+    width: 50em;
+}
+.cc {
+    background-image: url(./cc.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 17em;
+}
+.dd {
+    background-image: url(./dd.PNG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 34.5em;
+}
+.ee {
+    background-image: url(./ee.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 17.8em;
+}
+.ff {
+    background-image: url(./ff.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 17.8em;
+}
+.gg {
+    background-image: url(./gg.PNG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 34.5em;
+}
+.hh {
+    background-image: url(./hh.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 18em;
+}
+.ii {
+    background-image: url(./ii.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 25em;
+}
+.jj {
+    background-image: url(./jj.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25em;
+    width: 18em;
+}
+
+@media (min-width: 62em) {
+    .button-container-about {
+        flex-flow: wrap;
+        max-width: 80em;
+        
+    }
+}

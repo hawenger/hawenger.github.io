@@ -8,6 +8,7 @@ import Portfolio from './components/portfolio/Portfolio';
 import Error from './components/error/Error';
 import Navigation from './components/navigation/Navigation';
 import './App.css';
+import Gallery from './components/gallery/Gallery';
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
              <Route path="/about" component={About}/>
              <Route path="/contact" component={Contact}/>
              <Route path="/portfolio" component={Portfolio}/>
+             <Route path="/gallery" component={Gallery}/>
             <Route component={Error}/>
            </Switch>
         </div> 
